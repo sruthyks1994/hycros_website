@@ -1,9 +1,12 @@
-<!--{"title":"Pricing","description":"HYCROS plans are priced per user: Starter, Pro and Enterprise. Try everything in Pro free for 7 days, no card needed.","path":"/pricing/"}-->
+<!--{"title":"Pricing","description":"HYCROS plans are priced per user: Starter, Pro and Enterprise. Try every Pro feature free for 7 days with no card, then pay by card. Cancel anytime, with a money-back guarantee.","path":"/pricing/"}-->
 <section class="pagehead">
   <div class="wrap">
     <span class="eyebrow">Pricing</span>
-    <h1>Start free. Pay per user later.</h1>
-    <p class="lede">Choose the modules your team needs. Switch more on whenever you are ready.</p>
+    <h1>Start free. Pay per user when you are ready.</h1>
+    <p class="lede">
+      Try every Pro feature with your team for 7 days. Then pick the plan that fits, monthly or
+      yearly, and cancel whenever you like.
+    </p>
   </div>
 </section>
 
@@ -12,6 +15,7 @@
     <div class="plans" style="margin-top: 0">
       <div class="plan">
         <h2 style="font-size: 26px">Starter</h2>
+        <p class="plan-for">For teams that want tasks and time in one place.</p>
         <div class="price">{{PRICE_STARTER}}<small>{{PRICE_NOTE}}</small></div>
         <ul>
           <li>Tasks and projects</li>
@@ -20,11 +24,12 @@
           <li>Simplified employee view</li>
           <li>Default flow, Kanban boards and Scrum sprints</li>
         </ul>
-        <a class="btn" href="{{SIGNUP_URL}}" data-trial>Try free for 7 days</a>
+        <a class="btn" href="{{SIGNUP_URL}}" data-trial>Start with Starter</a>
       </div>
       <div class="plan hl">
         <span class="eyebrow">Most teams</span>
         <h2 style="font-size: 26px">Pro</h2>
+        <p class="plan-for">For organisations that run sales, people and delivery together.</p>
         <div class="price">{{PRICE_PRO}}<small>{{PRICE_NOTE}}</small></div>
         <ul>
           <li>Everything in Starter</li>
@@ -37,10 +42,11 @@
           <li>Quarterly revenue, SWOT and weekly updates</li>
           <li>Department docs, Cherry on top</li>
         </ul>
-        <a class="btn primary" href="{{SIGNUP_URL}}" data-trial>Try free for 7 days</a>
+        <a class="btn primary" href="{{SIGNUP_URL}}" data-trial>Start with Pro</a>
       </div>
       <div class="plan">
         <h2 style="font-size: 26px">Enterprise</h2>
+        <p class="plan-for">For larger organisations with their own systems.</p>
         <div class="price">Talk to us</div>
         <ul>
           <li>Everything in Pro</li>
@@ -52,30 +58,127 @@
         <a class="btn" href="/contact/">Contact us</a>
       </div>
     </div>
-    <p class="muted small" style="margin-top: 22px">
-      Single sign-on and directory provisioning (SCIM) are described on the
-      <a href="/security/">security page</a>. Prices exclude tax where it applies.
+    <ul class="assure">
+      <li>7-day free trial</li>
+      <li>No card to start</li>
+      <li>{{ANNUAL_NOTE}}</li>
+      <li>Cancel anytime</li>
+      <li>{{GUARANTEE}}</li>
+      <li>Free onboarding call</li>
+    </ul>
+    <p class="muted small" style="margin-top: 16px">
+      Prices exclude tax where it applies. Single sign-on and directory provisioning (SCIM) are
+      described on the <a href="/security/">security page</a>.
+    </p>
+
+    <h2 class="buy-h">How buying works</h2>
+    <ol class="buysteps">
+      <li><b>Start the free trial</b><span>Set up your workspace and invite the team. No card.</span></li>
+      <li><b>Choose a plan in the app</b><span>Pick Starter or Pro on the Subscription page, monthly or yearly.</span></li>
+      <li><b>Pay securely by card</b><span>Payment runs through Stripe. Invoices are in your account.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band soft" id="compare">
+  <div class="wrap">
+    <h2 class="h2" style="margin-bottom: 8px">Compare plans</h2>
+    <p class="lede">Everything a plan includes, side by side.</p>
+    <div class="tablewrap">
+      <table class="ctable">
+        <caption class="sr">HYCROS features by plan</caption>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">Starter</th><th scope="col" class="hlc">Pro</th><th scope="col">Enterprise</th></tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><th scope="colgroup" colspan="4">Work</th></tr>
+          <tr><th scope="row">Tasks and projects</th><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Default flow, Kanban boards and Scrum sprints</th><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Assignments</th><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Simplified employee view</th><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Scheduled tasks</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Release management and bug tracker</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Task governance</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="4">Time</th></tr>
+          <tr><th scope="row">Timesheets and timers</th><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Video duration capture</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="4">Sales and clients</th></tr>
+          <tr><th scope="row">Lead management</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Client access and status page</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Billing and budgets</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Quarterly revenue and targets</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="4">People</th></tr>
+          <tr><th scope="row">Leave and attendance</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Weekly updates and SWOT</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Department docs</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Cherry on top (team games)</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span aria-hidden="true">✓</span><span class="sr">Included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">Feature ownership catalog</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="4">Connections</th></tr>
+          <tr><th scope="row">Microsoft Teams</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+          <tr><th scope="row">eTimeOffice attendance sync</th><td><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td class="hlc"><span class="no" aria-hidden="true">–</span><span class="sr">Not included</span></td><td><span aria-hidden="true">✓</span><span class="sr">Included</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small" style="margin-top: 14px">
+      ✓ included &nbsp;·&nbsp; – not included. See every feature in detail on the
+      <a href="/features/">features page</a>.
     </p>
   </div>
 </section>
 
-<section class="band soft">
+<section class="band">
   <div class="wrap" style="max-width: 800px">
     <h2 class="h2" style="margin-bottom: 18px">Pricing questions</h2>
     <details>
       <summary>What does the free trial include?</summary>
-      <p>Everything in Pro, for 7 days, for up to your whole team. No card is asked for.</p>
+      <p>Everything in Pro, for 7 days, for your whole team. No card is asked for.</p>
     </details>
     <details>
-      <summary>What if I do not choose a plan?</summary>
+      <summary>How do I pay?</summary>
       <p>
-        On day 7 the workspace is suspended. Your data is kept, so you can pick a plan later and
-        carry on.
+        Inside HYCROS, on the Subscription page. Choose a plan and pay by card through Stripe. Your
+        invoices are kept in your account.
       </p>
+    </details>
+    <details>
+      <summary>Is yearly billing cheaper?</summary>
+      <p>Yes. {{ANNUAL_NOTE}} compared with paying month by month.</p>
     </details>
     <details>
       <summary>How is a user counted?</summary>
       <p>Plans are per user. Add and remove people whenever your team changes.</p>
+    </details>
+    <details>
+      <summary>Can I cancel, or get my money back?</summary>
+      <p>
+        You can cancel at any time, with no lock-in. HYCROS also comes with a money-back guarantee:
+        if it is not right for you after you subscribe, ask and we will refund you.
+      </p>
+    </details>
+    <details>
+      <summary>What if I do not choose a plan after the trial?</summary>
+      <p>
+        On day 7 the workspace is suspended. Your data is kept, so you can pick a plan later and
+        carry on where you left off.
+      </p>
+    </details>
+    <details>
+      <summary>Can I take my data with me?</summary>
+      <p>
+        Yes. Your site admin can download your organisation's data as a ZIP of CSV files whenever
+        you need it, including people, projects, tasks, timesheets, leave and the audit log.
+      </p>
+    </details>
+    <details>
+      <summary>Do you help us get started?</summary>
+      <p>
+        Yes. Every new customer gets a free onboarding call to set up departments, task lifecycles
+        and members. <a href="/contact/">Book it here</a>.
+      </p>
     </details>
   </div>
 </section>
@@ -84,8 +187,11 @@
   <div class="wrap">
     <div class="final">
       <h2>Try it with your team.</h2>
-      <p>7 days free. No card.</p>
-      <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+      <p>7 days free. No card. Cancel anytime.</p>
+      <div class="cta-row" style="justify-content: center">
+        <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+        <a class="btn ghost lg" href="/contact/">Talk to us</a>
+      </div>
     </div>
   </div>
 </section>

@@ -1,59 +1,110 @@
-<!--{"title":"Security","description":"How HYCROS keeps each company's data separate, how people sign in, and how access is controlled.","path":"/security/"}-->
+<!--{"title":"Security","description":"How HYCROS controls sign-in and access, keeps a record of every change, and lets you take your data with you.","path":"/security/"}-->
 <section class="pagehead">
   <div class="wrap">
     <span class="eyebrow">Security</span>
-    <h1>Your data stays in your workspace.</h1>
+    <h1>Your data, under your control.</h1>
     <p class="lede">
-      Every company has its own space. Who can see what inside it is decided by roles and settings
-      you control.
+      You choose how people sign in and who sees what. HYCROS keeps a record of what changed, and
+      your data is yours to download.
     </p>
   </div>
 </section>
 
 <section class="band">
   <div class="wrap">
-    <h2 class="h2" style="max-width: 20ch">Companies are kept apart.</h2>
-    <p class="lede" style="margin-top: 12px">
-      Every query is limited to the signed-in company. A record that belongs to another company is
-      answered as "not found", the same as a record that does not exist. Automated checks run on
-      every change and fail if one company could read or change another's records.
-    </p>
-    <div class="iso">
-      <div class="co">
-        <h3>Your company <span class="pill ok">your workspace</span></h3>
-        <div class="r">task · Onboarding pack</div>
-        <div class="r">lead · Meridian Foods</div>
-        <div class="r">timesheet · 31.5 h</div>
-      </div>
-      <div class="wall"><span>404 not found</span></div>
-      <div class="co">
-        <h3>Another company <span class="pill">separate</span></h3>
-        <div class="r">task · not visible</div>
-        <div class="r">lead · not visible</div>
-        <div class="r">timesheet · not visible</div>
-      </div>
-    </div>
-
-    <div class="grid g2" style="margin-top: 56px">
+    <h2 class="h2" style="max-width: 20ch">Who gets in.</h2>
+    <div class="grid g2">
       <div class="card">
         <h3>Sign-in options</h3>
         <p>
-          Password, Google or Microsoft sign-in, or your own single sign-on (SAML). Repeated failed
-          sign-ins are rate limited. Password rules and reset links are built in.
+          Password, Google or Microsoft sign-in, or your own single sign-on (SAML). Your admin picks
+          which ones are on. Repeated failed sign-ins are rate limited, and password rules and reset
+          links are built in.
         </p>
       </div>
       <div class="card">
         <h3>Provisioning from your directory</h3>
         <p>
-          Accounts can be created and switched off automatically from your identity provider with
-          SCIM, so leavers lose access the day they leave.
+          Microsoft Entra ID, or another identity provider, can add, update and switch off accounts
+          automatically with SCIM, so leavers lose access the day they leave.
         </p>
       </div>
       <div class="card">
-        <h3>Roles and access</h3>
+        <h3>Sessions that end</h3>
         <p>
-          Admins, managers, team leads and employees see what their role allows. Leads, clients and
-          billing are visible only to the people you give access to.
+          Idle sessions sign out after the timeout you set for your organisation, so an unattended
+          screen does not stay open.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Sharing without accounts</h3>
+        <p>
+          Clients see a read-only project status page through a private link. They never get an
+          account or a way into the rest of your workspace.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band soft">
+  <div class="wrap">
+    <h2 class="h2" style="max-width: 20ch">What they see.</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Roles</h3>
+        <p>
+          Admins, managers, team leads and employees each see what their role allows. A task opens
+          only for the people who are allowed to open it, on the task page and on boards alike.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Departments and user groups</h3>
+        <p>
+          Group people from any department, then assign the group to a project so its members can
+          see it. Everyone else in the team only sees the projects they belong to.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Sensitive modules</h3>
+        <p>
+          Leads, clients and billing are visible only to the people you give access to. Modules you
+          do not use can be switched off for everyone.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Approvals with reasons</h3>
+        <p>
+          Due-date and estimate changes, overdue edits and completions go through the approvers you
+          set, and the reason for each change is kept.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="h2" style="max-width: 20ch">What changed, and your data.</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Activity logs</h3>
+        <p>
+          Search the full history of a project or task, including deleted ones, and browse audited
+          actions across the workspace.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Timeline replay</h3>
+        <p>
+          Replay what was recorded for a project, task or person between two dates, step by step.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Export your data</h3>
+        <p>
+          Your site admin can download your organisation's data as a ZIP of CSV files: people,
+          projects, tasks, comments, timesheets, leave, attendance and the audit log.
         </p>
       </div>
       <div class="card">

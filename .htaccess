@@ -1,0 +1,4 @@
+# Opens the built site (dist/) at http://localhost/hycros_website/
+# Build for this URL with:  BASE=/hycros_website/dist node build.mjs
+RewriteEngine On
+RewriteRule ^$ /hycros_website/dist/ [R=302,L]

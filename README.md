@@ -12,7 +12,7 @@ node build.mjs --serve    # build and serve on http://localhost:4300
 
 | Path                | What                                                                                          |
 | ------------------- | --------------------------------------------------------------------------------------------- |
-| `site.config.json`  | Domains, the sign-up link, contact email and prices. `null` price shows "Announced at launch" |
+| `site.config.json`  | Domains, sign-up link, contact email, prices, `annualDiscountPercent` and `guaranteeDays`. A `null` price shows "Announced at launch" |
 | `src/pages/*.html`  | One file per page. The first line is a comment with `title`, `description`, `path`, `noindex` |
 | `src/partials/`     | Shared header and footer                                                                      |
 | `src/css`, `src/js` | Styles and the small script (menu, tour tabs, screenshot fallback)                            |
@@ -37,19 +37,25 @@ Capture them from a demo company, never from real customer data.
 
 ## Before launch
 
-- Set `contactEmail` and the real prices in `site.config.json`.
-- Replace the draft terms and privacy pages with approved text, then remove `"noindex": true` from both.
-- Add a PNG for `og.svg` (most social sites ignore SVG previews).
+`node build.mjs` prints a "Before launch" line for each setting that is still missing.
+
+- Set `contactEmail`, the real prices, `annualDiscountPercent` ("Save 20% with yearly billing") and `guaranteeDays`
+  ("30-day money-back guarantee") in `site.config.json`. Until then the site shows the wording without figures.
+- Replace the draft terms and privacy pages with approved text, then remove `"noindex": true` from both. The sign-up page stores the
+  version of the terms each person accepted (`TERMS_VERSION` in `platform-admin/src/signup/signup.ts` in the product repository);
+  bump it whenever the terms text changes.
 - Point `signupUrl` at the platform-admin sign-up page and `appUrl` at the product.
 - The platform-admin sign-up page needs `PLATFORM_SIGNUP_ENABLED=1` and a CSP that allows the captcha (see the plan, Phase 4).
+
+## Social image and icons
+
+`src/public/og.png` (1200x630) is the link preview that social sites show; `og.svg` is its source. `apple-touch-icon.png` (180x180)
+is the home-screen icon. When `og.svg` changes, re-render the PNG at 1200x630, for example with headless Chrome:
+`chrome --headless --hide-scrollbars --window-size=1200,630 --screenshot=og.png og.svg`.
 
 ## Deploy
 
 `deploy/marketing-site.sh` builds the site, serves it on nginx at the marketing domain, and publishes only the sign-up pages of the
 Platform Admin service on a second domain (the console stays private), with a CSP that allows Cloudflare Turnstile and HTTPS from
-certbot. `deploy/platform-admin.service` is the systemd unit for that service. Run the script as root on the server, with both domains
-pointing at it; its header lists the settings.
-
-## Deploy
-
-`deploy/marketing-site.sh` builds the site and sets up nginx for the website and the free-trial sign-up host. The sign-up host proxies to the Platform Admin service, which stays in the product repository (with its `deploy/platform-admin.service`).
+certbot. Run the script as root on the server, with both domains pointing at it; its header lists the settings. The Platform Admin
+service itself, and its systemd unit `deploy/platform-admin.service`, live in the product repository.

@@ -1,24 +1,25 @@
-<!--{"title":"HYCROS | Tasks, projects, leads and time in one workspace","description":"HYCROS brings tasks, boards, leads, time tracking, approvals and reports into one workspace. Try it with your own team free for 7 days. No card needed.","path":"/"}-->
+<!--{"title":"HYCROS | Tasks, projects, leads and time in one workspace","description":"HYCROS replaces your task tracker, timesheets, lead spreadsheet and leave register with one workspace. Try it free for 7 days, no card needed, then pay per user. Cancel anytime.","path":"/"}-->
 <section class="hero">
   <div class="wrap">
     <div class="copy">
       <span class="eyebrow">Hybrid Cross-functional Organization Suite</span>
       <h1>Every task, lead and hour. <em>One place.</em></h1>
       <p class="lede">
-        HYCROS brings projects, boards, leads, time, approvals and reports into one workspace that
-        follows your process. Try it with your own team for 7 days.
+        Swap your task tracker, timesheets, lead spreadsheet and leave register for one workspace
+        your whole team will actually use. Try it free for 7 days, then pay per user.
       </p>
       <div class="cta-row">
         <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
-        <a class="btn ghost lg" href="#tour">Take the tour</a>
+        <a class="btn ghost lg" href="#pricing">See plans</a>
       </div>
       <div class="fine">
-        <span>No card</span><span>Ready in minutes</span><span>Your data is kept</span>
+        <span>No card needed</span><span>Cancel anytime</span><span>{{GUARANTEE}}</span
+        ><span>Free onboarding call</span>
       </div>
     </div>
     <div class="frame">
       <div class="bar">
-        <span></span><span></span><span></span><em>app.hycros.com / dashboard</em>
+        <span></span><span></span><span></span><em>{{APP_HOST}} / dashboard</em>
       </div>
       <figure class="shot">
         <img
@@ -41,6 +42,17 @@
       ><s>status chase on chat</s>
       <b>One workspace, one set of rules.</b>
     </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="HYCROS in numbers">
+  <div class="wrap">
+    <dl class="statrow">
+      <div><dt>{{FEATURE_COUNT}}</dt><dd>features in one subscription</dd></div>
+      <div><dt>{{FEATURE_GROUPS}}</dt><dd>product areas, switch on what you use</dd></div>
+      <div><dt>7 days</dt><dd>free trial, no card asked for</dd></div>
+      <div><dt>3</dt><dd>ways to work: web, Windows and Android</dd></div>
+    </dl>
   </div>
 </section>
 
@@ -70,7 +82,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / my-tasks</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / my-tasks</em>
         </div>
         <figure class="shot">
           <img
@@ -100,7 +112,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / boards</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / boards</em>
         </div>
         <figure class="shot">
           <img
@@ -130,7 +142,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / leads</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / leads</em>
         </div>
         <figure class="shot">
           <img
@@ -160,7 +172,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / timesheets</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / timesheets</em>
         </div>
         <figure class="shot">
           <img
@@ -190,7 +202,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / team-calendar</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / team-calendar</em>
         </div>
         <figure class="shot">
           <img
@@ -202,6 +214,61 @@
             loading="lazy"
           />
         </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band soft" id="replace">
+  <div class="wrap">
+    <span class="eyebrow">Why switch</span>
+    <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">
+      One subscription instead of a stack of tools.
+    </h2>
+    <p class="lede">
+      Every extra tool is another login, another bill and another place where the numbers do not
+      match. HYCROS puts the whole working day in one place.
+    </p>
+    <div class="compare">
+      <div class="col before">
+        <h3>Without HYCROS</h3>
+        <ul>
+          <li>A task tracker</li>
+          <li>A Kanban or Scrum board</li>
+          <li>A timesheet app or shared sheet</li>
+          <li>A lead spreadsheet or separate CRM</li>
+          <li>A leave and attendance register</li>
+          <li>Reports rebuilt by hand every month</li>
+          <li>Separate logins, bills and data for each</li>
+        </ul>
+      </div>
+      <div class="col after">
+        <h3>With HYCROS</h3>
+        <ul>
+          <li>Tasks, boards, time, leads and leave in one workspace</li>
+          <li>One sign-in, with Microsoft, Google or your own SSO</li>
+          <li>One bill, priced per user</li>
+          <li>One set of data, so every report is already up to date</li>
+          <li>One set of rules, applied on every screen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="calc" id="calc" data-currency="{{CURRENCY}}" hidden>
+      <div class="calc-in">
+        <h3>What does tool-hopping cost your team?</h3>
+        <p class="muted small">
+          Example figures. Change them to match your team; nothing you type leaves this page.
+        </p>
+        <label>People on the team<input type="number" id="c-people" min="1" max="5000" value="10" inputmode="numeric"></label>
+        <label>Hours each person loses a week to chasing status and copying between tools<input type="number" id="c-hours" min="0" max="40" step="0.5" value="2" inputmode="decimal"></label>
+        <label>Cost of one working hour ({{CURRENCY}})<input type="number" id="c-rate" min="0" max="100000" step="50" value="500" inputmode="numeric"></label>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <span class="eyebrow">Cost of time lost each month</span>
+        <b id="c-cost">-</b>
+        <span id="c-time">-</span>
+        <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Win that time back</a>
       </div>
     </div>
   </div>
@@ -223,7 +290,7 @@
       </div>
       <div class="frame">
         <div class="bar">
-          <span></span><span></span><span></span><em>app.hycros.com / reports</em>
+          <span></span><span></span><span></span><em>{{APP_HOST}} / reports</em>
         </div>
         <figure class="shot">
           <img
@@ -239,7 +306,7 @@
     </div>
     <div class="grid g3">
       <div class="card">
-        <div class="ico">%</div>
+        <div class="ico" aria-hidden="true">%</div>
         <h3>Allocation, with the truth</h3>
         <p>
           Open task estimates against each person's working hours this month. Over 100% is possible,
@@ -247,7 +314,7 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">±</div>
+        <div class="ico" aria-hidden="true">±</div>
         <h3>Estimate against actual</h3>
         <p>
           Learn where estimates run short, and see the reasons behind every due-date and estimate
@@ -255,17 +322,17 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">→</div>
+        <div class="ico" aria-hidden="true">→</div>
         <h3>Delivery you can predict</h3>
         <p>Throughput, cycle time and lead time from your boards and finished tasks.</p>
       </div>
       <div class="card">
-        <div class="ico">+</div>
+        <div class="ico" aria-hidden="true">+</div>
         <h3>Report builder</h3>
         <p>Choose fields, filter, group and save a report for yourself or the team.</p>
       </div>
       <div class="card">
-        <div class="ico">◔</div>
+        <div class="ico" aria-hidden="true">◔</div>
         <h3>Live team status</h3>
         <p>
           Who is online, who is working on what, and the daily report that writes itself from the
@@ -273,7 +340,7 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">$</div>
+        <div class="ico" aria-hidden="true">{{CURRENCY}}</div>
         <h3>Projects and billing</h3>
         <p>Project and portfolio reports, budgets and billing, on the plans that include them.</p>
       </div>
@@ -287,7 +354,52 @@
   </div>
 </section>
 
-<section class="band" id="easy">
+<section class="band" id="roles">
+  <div class="wrap">
+    <span class="eyebrow">For the whole team</span>
+    <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">
+      Everyone gets a reason to open it.
+    </h2>
+    <p class="lede">
+      A tool pays for itself only when every person uses it. HYCROS gives each role the screen it
+      needs, and nothing it does not.
+    </p>
+    <div class="grid g3">
+      <div class="card role">
+        <span class="eyebrow">Owners and managers</span>
+        <h3>Know where the money and hours go</h3>
+        <ul class="ticks">
+          <li>Resource allocation and capacity</li>
+          <li>Billing, budgets and profitability</li>
+          <li>Quarterly revenue against targets</li>
+          <li>Portfolio and delivery risk</li>
+        </ul>
+      </div>
+      <div class="card role">
+        <span class="eyebrow">Team leads</span>
+        <h3>Keep work moving without chasing</h3>
+        <ul class="ticks">
+          <li>One queue for every approval</li>
+          <li>Kanban boards and Scrum sprints</li>
+          <li>Live status of who is on what</li>
+          <li>Reminders to many people at once</li>
+        </ul>
+      </div>
+      <div class="card role">
+        <span class="eyebrow">Everyone else</span>
+        <h3>Know what to do next</h3>
+        <ul class="ticks">
+          <li>My Tasks, sorted by what is due</li>
+          <li>One-click timers, no timesheet typing</li>
+          <li>Leave and WFH requests in a few clicks</li>
+          <li>Windows and Android apps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band soft" id="easy">
   <div class="wrap">
     <span class="eyebrow">Ease of use</span>
     <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">
@@ -299,7 +411,7 @@
     </p>
     <div class="grid g3">
       <div class="card">
-        <div class="ico">1</div>
+        <div class="ico" aria-hidden="true">1</div>
         <h3>Ready in minutes</h3>
         <p>
           Pick a starter pack (general office, software team or e-learning) and your departments and
@@ -307,14 +419,14 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">▶</div>
+        <div class="ico" aria-hidden="true">▶</div>
         <h3>One-click timers</h3>
         <p>
           Start work and the clock runs. If you step away, HYCROS asks what to do with the time.
         </p>
       </div>
       <div class="card">
-        <div class="ico">✓</div>
+        <div class="ico" aria-hidden="true">✓</div>
         <h3>Rules you set once</h3>
         <p>
           Lifecycles, checklists and approvals are set per organisation, then applied everywhere,
@@ -322,7 +434,7 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">Aa</div>
+        <div class="ico" aria-hidden="true">Aa</div>
         <h3>Plain words, calm screens</h3>
         <p>
           One accent colour, clear labels and status written as words. The next task is always the
@@ -330,12 +442,12 @@
         </p>
       </div>
       <div class="card">
-        <div class="ico">⌘</div>
+        <div class="ico" aria-hidden="true">⌘</div>
         <h3>Where you work</h3>
-        <p>In the browser, as a desktop app and as a mobile app, with light and dark themes.</p>
+        <p>In the browser, as a Windows desktop app and as an Android app, with light and dark themes.</p>
       </div>
       <div class="card">
-        <div class="ico">?</div>
+        <div class="ico" aria-hidden="true">?</div>
         <h3>Help built in</h3>
         <p>
           A Help center that is kept in step with every release, and a page of new updates for
@@ -346,15 +458,15 @@
   </div>
 </section>
 
-<section class="band soft" id="days">
+<section class="band" id="days">
   <div class="wrap">
     <span class="eyebrow">Free trial</span>
     <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">
       Seven days. Here is how to use them.
     </h2>
     <p class="lede">
-      Your workspace is ready within minutes of confirming your email. No card is asked for at any
-      point.
+      Your workspace is ready within minutes of confirming your email. No card is asked for during
+      the trial.
     </p>
     <div class="days">
       <div class="day">
@@ -392,30 +504,95 @@
   </div>
 </section>
 
-<section class="band" id="security">
+<section class="band soft" id="risk-free">
   <div class="wrap">
-    <span class="eyebrow">Security</span>
-    <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">Companies never see each other.</h2>
+    <span class="eyebrow">Buying</span>
+    <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">Buying HYCROS is risk-free.</h2>
     <p class="lede">
-      Every query is limited to the signed-in company, and a record that belongs to another company
-      looks as if it does not exist. Isolation is checked automatically on every change.
+      You see it working with your own team before you pay, and you are never locked in after.
     </p>
-    <div class="iso">
-      <div class="co">
-        <h3>Your company <span class="pill ok">your workspace</span></h3>
-        <div class="r">task · Onboarding pack</div>
-        <div class="r">lead · Meridian Foods</div>
-        <div class="r">timesheet · 31.5 h</div>
+    <div class="grid g4">
+      <div class="card promise">
+        <div class="ico" aria-hidden="true">7</div>
+        <h3>Try before you pay</h3>
+        <p>7 days with every Pro feature, for your whole team. No card asked for.</p>
       </div>
-      <div class="wall"><span>404 not found</span></div>
-      <div class="co">
-        <h3>Another company <span class="pill">separate</span></h3>
-        <div class="r">task · not visible</div>
-        <div class="r">lead · not visible</div>
-        <div class="r">timesheet · not visible</div>
+      <div class="card promise">
+        <div class="ico" aria-hidden="true">↺</div>
+        <h3>{{GUARANTEE}}</h3>
+        <p>If HYCROS is not right for you after you subscribe, ask and we will refund you.</p>
+      </div>
+      <div class="card promise">
+        <div class="ico" aria-hidden="true">×</div>
+        <h3>Cancel anytime</h3>
+        <p>No lock-in. Stop when you like, and download all of your data as CSV files first.</p>
+      </div>
+      <div class="card promise">
+        <div class="ico" aria-hidden="true">☎</div>
+        <h3>Free onboarding call</h3>
+        <p>We help you set up departments, task lifecycles and your team, so you start right.</p>
       </div>
     </div>
-    <p style="margin-top: 28px"><a class="btn" href="/security/">How we protect your data</a></p>
+
+    <h3 class="buy-h">How buying works</h3>
+    <ol class="buysteps">
+      <li><b>Start the free trial</b><span>Set up your workspace and invite the team.</span></li>
+      <li><b>Choose a plan in the app</b><span>Pick Starter or Pro on the Subscription page, monthly or yearly.</span></li>
+      <li><b>Pay securely by card</b><span>Payment runs through Stripe. Invoices are in your account.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" id="security">
+  <div class="wrap">
+    <div class="split2">
+      <div class="stack">
+        <span class="eyebrow">Security</span>
+        <h2 class="h2" style="max-width: 16ch">You decide who gets in, and what they see.</h2>
+        <p class="lede">
+          Choose how people sign in, give each role only what it needs, and keep a record of every
+          change. Security is part of the everyday product, not an add-on.
+        </p>
+        <p style="margin-top: 10px">
+          <a class="btn" href="/security/">How we protect your data</a>
+        </p>
+      </div>
+      <div class="secpanel">
+        <div class="head">Security at a glance</div>
+        <dl>
+          <div class="row">
+            <dt>Sign-in</dt>
+            <dd>Microsoft, Google or your own SAML single sign-on</dd>
+            <span class="pill ok">On</span>
+          </div>
+          <div class="row">
+            <dt>Provisioning</dt>
+            <dd>People added and removed from Microsoft Entra ID with SCIM</dd>
+            <span class="pill ok">On</span>
+          </div>
+          <div class="row">
+            <dt>Access</dt>
+            <dd>Roles, departments and user groups decide who sees what</dd>
+            <span class="pill">Built in</span>
+          </div>
+          <div class="row">
+            <dt>Sessions</dt>
+            <dd>Idle sessions sign out after the time you set</dd>
+            <span class="pill ok">On</span>
+          </div>
+          <div class="row">
+            <dt>Audit</dt>
+            <dd>Activity logs and timeline replay for every project and task</dd>
+            <span class="pill">Built in</span>
+          </div>
+          <div class="row">
+            <dt>Export</dt>
+            <dd>Download your organisation's data as CSV files</dd>
+            <span class="pill">Built in</span>
+          </div>
+        </dl>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -425,21 +602,25 @@
     <h2 class="h2" style="margin: 12px 0 12px; max-width: 18ch">
       Start free. Choose a plan when you are ready.
     </h2>
-    <p class="lede">Plans are priced per user. The trial includes the Pro features for 7 days.</p>
+    <p class="lede">
+      Plans are priced per user. The trial includes every Pro feature for 7 days. {{ANNUAL_NOTE}}.
+    </p>
     <div class="plans">
       <div class="plan">
         <h3 style="font-size: 24px">Starter</h3>
+        <p class="plan-for">For teams that want tasks and time in one place.</p>
         <div class="price">{{PRICE_STARTER}}<small>{{PRICE_NOTE}}</small></div>
         <ul>
           <li>Tasks and projects</li>
           <li>Timesheets and timers</li>
           <li>Kanban boards and Scrum sprints</li>
         </ul>
-        <a class="btn" href="{{SIGNUP_URL}}" data-trial>Try free</a>
+        <a class="btn" href="{{SIGNUP_URL}}" data-trial>Start with Starter</a>
       </div>
       <div class="plan hl">
         <span class="eyebrow">Most teams</span>
         <h3 style="font-size: 24px">Pro</h3>
+        <p class="plan-for">For organisations that run sales, people and delivery together.</p>
         <div class="price">{{PRICE_PRO}}<small>{{PRICE_NOTE}}</small></div>
         <ul>
           <li>Everything in Starter</li>
@@ -447,10 +628,11 @@
           <li>Leave and attendance</li>
           <li>Task governance</li>
         </ul>
-        <a class="btn primary" href="{{SIGNUP_URL}}" data-trial>Try free</a>
+        <a class="btn primary" href="{{SIGNUP_URL}}" data-trial>Start with Pro</a>
       </div>
       <div class="plan">
         <h3 style="font-size: 24px">Enterprise</h3>
+        <p class="plan-for">For larger organisations with their own systems.</p>
         <div class="price">Talk to us</div>
         <ul>
           <li>Everything in Pro</li>
@@ -460,8 +642,15 @@
         <a class="btn" href="/contact/">Contact us</a>
       </div>
     </div>
+    <ul class="assure">
+      <li>7-day free trial</li>
+      <li>No card to start</li>
+      <li>Cancel anytime</li>
+      <li>{{GUARANTEE}}</li>
+      <li>Free onboarding call</li>
+    </ul>
     <p class="muted small" style="margin-top: 16px">
-      <a href="/pricing/">See what each plan includes</a>
+      <a href="/pricing/">Compare every feature by plan</a>
     </p>
   </div>
 </section>
@@ -474,24 +663,44 @@
       <p>No. Sign up with your work email, confirm it and your workspace is ready.</p>
     </details>
     <details>
-      <summary>What happens after 7 days?</summary>
+      <summary>How do I pay when the trial ends?</summary>
       <p>
-        The workspace is suspended and nobody can sign in until you choose a plan or contact us.
-        Your data is kept.
+        Choose Starter or Pro on the Subscription page inside HYCROS and pay by card through Stripe.
+        Your invoices are kept in your account. Everything your team set up during the trial stays
+        as it is.
       </p>
     </details>
     <details>
-      <summary>Where is my data, and who can see it?</summary>
+      <summary>What happens if I do not choose a plan?</summary>
       <p>
-        In your own company workspace. Other companies cannot see or change it, and every sign-in is
-        checked against your company.
+        After 7 days the workspace is suspended and nobody can sign in until you choose a plan or
+        contact us. Your data is kept.
       </p>
     </details>
     <details>
-      <summary>Can I set it up for my kind of team?</summary>
+      <summary>Can I cancel, or get my money back?</summary>
       <p>
-        Pick a starter pack at sign-up (general office, software team or e-learning), or start empty
-        and set up your own departments.
+        Yes. You can cancel at any time, with no lock-in, and HYCROS comes with a money-back
+        guarantee if it is not right for you. Before you leave, your site admin can download all of
+        your data as CSV files.
+      </p>
+    </details>
+    <details>
+      <summary>Is yearly billing cheaper?</summary>
+      <p>Yes. {{ANNUAL_NOTE}} compared with paying month by month.</p>
+    </details>
+    <details>
+      <summary>Will someone help us set it up?</summary>
+      <p>
+        Yes. Every new customer gets a free onboarding call to set up departments, task lifecycles
+        and members. <a href="/contact/">Book it here</a>.
+      </p>
+    </details>
+    <details>
+      <summary>Who can see our data?</summary>
+      <p>
+        Only the people you invite, and each person sees only what their role allows. Leads, clients
+        and billing are visible only to the people you give access to.
       </p>
     </details>
     <details>
@@ -504,8 +713,9 @@
     <details>
       <summary>Why not just use one tool per job?</summary>
       <p>
-        You can. But then tasks, hours, leads and leave live in different places, and nobody can see
-        the whole picture. HYCROS keeps it in one place and switches on only the parts you use.
+        You can. But then tasks, hours, leads and leave live in different places, you pay for each,
+        and nobody can see the whole picture. HYCROS keeps it in one place and switches on only the
+        parts you use.
       </p>
     </details>
   </div>
@@ -514,9 +724,12 @@
 <section class="band" style="padding-top: 0">
   <div class="wrap">
     <div class="final">
-      <h2>Your first task is minutes away.</h2>
-      <p>7 days free. No card.</p>
-      <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+      <h2>Your team could be working in HYCROS this afternoon.</h2>
+      <p>7 days free. No card. Cancel anytime.</p>
+      <div class="cta-row" style="justify-content: center">
+        <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+        <a class="btn ghost lg" href="/contact/">Book a free onboarding call</a>
+      </div>
     </div>
   </div>
 </section>
