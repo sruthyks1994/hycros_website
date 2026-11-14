@@ -1,0 +1,1766 @@
+[
+    {
+        "id": "my-tasks",
+        "category": "Getting started",
+        "title": "My Tasks",
+        "summary": "Your main workspace for assigned tasks, timers, progress, and daily actions.",
+        "roles": "All members",
+        "url": "../dashboard",
+        "steps": [
+            "Open My Tasks from the sidebar.",
+            "Search or filter work and switch between table and grid views.",
+            "Tasks are grouped as Due today, Overdue, Upcoming and No due date, with Due today first.",
+            "Open a task or use an available workflow action.",
+            "In a Scrum project, a task shows its sprint (or Backlog) under its name. Under Filters and Settings, use Sprint to show the current sprint, the backlog or any sprint. This appears only when Scrum sprints is on."
+        ]
+    },
+    {
+        "id": "priority-matrix",
+        "category": "Getting started",
+        "title": "Priority matrix",
+        "summary": "Sort open tasks into four boxes to decide what to do first: Do first (urgent and important), Schedule (important, not urgent), Delegate (urgent, not important) and Eliminate (not urgent, not important). A task is urgent when it is overdue or due within 2 days, and important when its priority is High. You can move a task yourself and reset it later.",
+        "roles": "All members",
+        "url": "../projects/list",
+        "steps": [
+            "Open Projects, open a project and select the Priority matrix tab to see that project's tasks.",
+            "Each box shows its first 5 tasks; select Show more to see the rest, or Show fewer to collapse it again.",
+            "Drag a task into another box, or pick a box in its Move to list.",
+            "Select Reset on a task you moved to let the matrix place it again from its due date and priority."
+        ]
+    },
+    {
+        "id": "home",
+        "category": "Getting started",
+        "title": "Home",
+        "summary": "The page you land on after signing in, built for your role and kept simple: what needs your action and a few key numbers first. Charts, trends, your points and what's new for you follow below on the manager, HR and company views. Employees see My day: the task to do next, what is due today and overdue, the timer running, hours today and their points, nothing else. Managers and Team Leads see Project delivery for their own team, and project managers see it for the projects they own or are a member of. The CEO sees Company overview. People with the HR flag see People today.",
+        "roles": "All members",
+        "url": "../home",
+        "steps": [
+            "Open Home from the sidebar.",
+            "Use the tabs at the top (Company overview, Project delivery, People today, My day) to switch view; the arrow keys also move between them. You only see the tabs that apply to you.",
+            "On Company overview, Needs your attention at the top left lists what needs the CEO, Admin or Site Admin: leave or WFH requests to decide, task and timesheet approvals, project join requests, due date change requests and overdue task edit requests (Admin and Site Admin only), overdue tasks, tasks with no one assigned, tasks waiting for review, projects past their end date, people over 100% of this month's hours, departments over 100% of their hours, leave requests waiting over 3 days, leads waiting for a reply, people with no check-out yesterday and profiles missing setup, one row each with a count and a button (Open, Review, Assign or Fix). Rows with a count of zero are hidden. Under it, the Projects list lists the late projects with their days late.",
+            "Select a name, number or Open link to go to the page behind it. On Company overview, the right column shows Company today (checked in, delivered on time in the last 30 days with its change, and planned workload this month with its change since a week ago once a week of figures is saved), the most overloaded people and your points; each number opens its report (Team attendance, Delivery predictability, Capacity vs demand, Points leaderboard). Below, Planned workload by department and Leads by status complete the view.",
+            "On Project delivery, Needs your attention at the top left lists everything waiting on you, one row each with a count and a button: leave or WFH requests to decide, task and timesheet approvals, project join requests, due date change requests and overdue task edit requests (Review), overdue tasks, tasks waiting for review, projects past their end date, people over 100% of this month's hours and people not checked in yet (Open), and tasks with no one assigned (Assign). The count and the button open the page that answers it: the overdue count opens All Tasks filtered to overdue tasks, the review count opens All Tasks filtered to In Review, and the over 100% count opens the Capacity vs demand report. Rows with a count of zero are hidden, and the card says Nothing needs your attention right now when all are clear.",
+            "Under the attention card, the Projects list lists the projects that need a look with a Late, Ends soon or On track chip and their overdue tasks. Select a project's overdue count to see its overdue tasks, or the summary above the list to open the Portfolio report. On the right, select a Team today number to open Team attendance (or Team live status for timers), a Workload percentage to open Capacity vs demand, and your points to open the Points leaderboard. Team today shows who has checked in, who is not in yet, who is on leave and how many timers are running, Workload shows the people most over 100% this month, and Your points shows this month's points. Further down, Team shows the full team today list and open estimates against this month's hours, and Tasks shows leave requests to approve, tasks to assign, tasks waiting for review, finished on time, open tasks by due date and tasks finished per week.",
+            "On My day, Do this next shows the one task to start with (High priority first, then the most overdue); next to the title a chip shows the task's status (for example In Progress or In Review). The button is the same one the task has in My Tasks: Start, Resume or Pause, and Start Review, Resume Review or Pause Review while the task is In Review. Select it to start, resume or pause the timer, or select the task name or Open task to work on it. Under the buttons, the card shows the time already logged on the task, or the running clock while you are timing it. If a task needs answers first (such as a due date or an estimate), the button opens the task so you can answer them. While you are timing that task, the clock counts up inside the card and the Timer panel on the right is hidden; when you are timing a different task, the Timer panel shows it. Due today and Overdue list up to 5 tasks each with their project; select and N more to see the rest in My Tasks. On the right, Timer running shows the task you are timing and counts up the time (it says No timer running when there is none), Hours today shows the hours you logged today, and Your points shows this month's points.",
+            "On Project delivery, Overdue by project lists the projects with the most overdue tasks and how many are over 30 days late.",
+            "On People today, Profiles missing setup shows how many profiles lack each field (for example job role or manager).",
+            "On People today, the Needs your attention card has one row per item (leave requests waiting over 3 days, people with no check-out yesterday, probation periods past their end, profiles missing setup, people leaving soon), each with a button that opens the page that answers it; the On probation tile shows when the next one ends.",
+            "On Project delivery, Managers and Admins can select Choose members for a Team Lead to decide who a Team Lead looks after.",
+            "On Project delivery, a project manager (a member with the project manager flag who is not a Manager or Team Lead) sees only the projects they own or are a member of. The line under the tabs says Showing: Projects you manage, and Needs your attention, Projects, tasks to assign, tasks waiting for review and Team today count only those projects and the people working on them. Workload still shows each person's whole month.",
+            "Select the Calendar tab, the last tab on Home, to see the month with holidays marked, your own approved leave, the tasks assigned to you by due date, the projects you own or belong to by end date, and today highlighted. Select a day to open a popup with that day's holiday, leave, tasks due and projects ending, and select Add task in it to create a task. Your tasks due, your projects ending and the month's holidays are listed under it. Use the arrow buttons to move between months (one back, five ahead), select Today to return, or select Team calendar to open the full team calendar.",
+            "On the manager, HR and company views, scroll to the bottom for Your points (this month's points and how you compare) and What's new for you, which shows the latest few changes for your role. Select Show more changes for the rest of the day, then Show older updates to open the All updates page, a searchable table of every change for your role."
+        ]
+    },
+    {
+        "id": "recent-activity",
+        "category": "Getting started",
+        "title": "Recent activity",
+        "summary": "A Home card that shows the latest changes on the tasks and projects you are on or look after, written like the History panel on a task: who did what, the task and project it belongs to, and when. Managers and Team Leads see their department or chosen members, project managers see the projects they run, and Admins, Site Admins and the CEO see the whole company. Everyone else sees only the tasks and projects they are on.",
+        "roles": "All members",
+        "url": "../home/activity",
+        "steps": [
+            "Open Home.",
+            "Read the Recent activity card at the bottom of the page, next to What's new (on My day it sits on its own): it shows the 5 newest events with a badge, the time, what happened, and links to the task and project.",
+            "Select View all to open the full list, newest first.",
+            "Use Search (task or project name), Who, From and To to narrow the list; More filters holds the rest, including Rows per page.",
+            "Use the page numbers under the list to move through older events, or Reset to clear the filters."
+        ]
+    },
+    {
+        "id": "profile",
+        "category": "Getting started",
+        "title": "My Profile",
+        "summary": "Update your name, password, timezone, notification sound, HYCROS — Hybrid Cross-functional Organization Suite mascot, and wellness preferences, choose how you hear about each kind of notification, or show a QR code to sign in on your phone.",
+        "roles": "All members",
+        "url": "../profile",
+        "steps": [
+            "Open My Profile at the bottom of the sidebar.",
+            "Update the required details.",
+            "Turn Show HYCROS — Hybrid Cross-functional Organization Suite mascot on or off. Select See all mascots to open the Mascot gallery.",
+            "Select Notification preferences to expand it (it starts collapsed), then tick or clear In app, Email and Teams for each kind of notification. Each change saves straight away and a message confirms it. Security and account messages are always sent and cannot be changed.",
+            "To sign in on your phone, select Show QR code under Sign in on your phone, then in the HYCROS — Hybrid Cross-functional Organization Suite app choose Sign in with QR code and scan it. The code works once and expires after two minutes. If you do not see this section, your organisation has turned QR sign-in off.",
+            "Under Get the apps, select Download for Windows or Download for Android to get the app. Install steps are on the Get the apps page.",
+            "Save the relevant section."
+        ]
+    },
+    {
+        "id": "festival-mascot",
+        "category": "Getting started",
+        "title": "Festival mascot",
+        "summary": "On the day of a public holiday where you are, and for two days before and after, HYCROS — Hybrid Cross-functional Organization Suite wears a festival outfit and Home greets you. Your country comes from your timezone, so a person in India and a person in Germany each see their own holidays. In India, Muslim festivals, Christian festivals and Diwali count.",
+        "roles": "All members",
+        "url": "../home",
+        "steps": [
+            "Open Home. During a holiday week a greeting with HYCROS — Hybrid Cross-functional Organization Suite in its festival outfit shows at the top, such as Happy Diwali! or Eid is in 2 days.",
+            "Select the close button on the greeting to hide it for the day.",
+            "To change which holidays you see, open My Profile and set your Timezone.",
+            "To turn the outfit and the greeting off for yourself, open My Profile and turn off Show HYCROS — Hybrid Cross-functional Organization Suite mascot.",
+            "Admins can turn holidays off for everyone: open Organization, find HYCROS — Hybrid Cross-functional Organization Suite, the project buddy, turn off Dress HYCROS — Hybrid Cross-functional Organization Suite for holidays, then select Save organisation settings. National days only show the greeting, with no outfit."
+        ]
+    },
+    {
+        "id": "mascot-gallery",
+        "category": "Getting started",
+        "title": "Mascot gallery",
+        "summary": "See every HYCROS — Hybrid Cross-functional Organization Suite mascot pose and festival outfit on one page, in light or dark, at three sizes.",
+        "roles": "All members",
+        "url": "../mascots",
+        "steps": [
+            "Open My Profile and select See all mascots (it shows when the mascot is on for your organisation).",
+            "Use Background to switch between Light and Dark, and Size to choose 48, 112 or 160 px.",
+            "Use Pose for the outfits to choose the pose the festival outfits wear, and turn Animated on or off.",
+            "Look through Poses and Festival outfits."
+        ]
+    },
+    {
+        "id": "notifications",
+        "category": "Getting started",
+        "title": "Notifications",
+        "summary": "Review task alerts, enable browser notifications, choose whether new notifications play a sound, and choose which kinds reach you in the app, by email or in Teams.",
+        "roles": "All members",
+        "url": "../notifications",
+        "steps": [
+            "Select the bell in the top bar.",
+            "Open a notification or select View all notifications.",
+            "Mark individual notifications or all notifications as read.",
+            "To turn the sound off, open My Profile, clear Play a sound for new notifications, and save.",
+            "To choose which kinds of notification you get, open My Profile and use the In app, Email and Teams boxes under Notification preferences. Email is also only sent while Email me about task assignments and related notifications is on."
+        ]
+    },
+    {
+        "id": "personal-todo",
+        "category": "Getting started",
+        "title": "Sticky Notes",
+        "summary": "Keep a private, reorderable checklist.",
+        "roles": "All members",
+        "url": "../sticky-notes",
+        "steps": [
+            "Click Sticky Notes in the sidebar to open your personal notes.",
+            "Add and reorder items.",
+            "Mark items done or reopen them later."
+        ]
+    },
+    {
+        "id": "team-dashboard",
+        "category": "Getting started",
+        "title": "Team dashboard",
+        "summary": "See each teammate's tasks in one place to follow up on work.",
+        "roles": "Reviewers (Team Lead, Manager, Admin)",
+        "url": "../member-tasks",
+        "steps": [
+            "Open Team dashboard in the sidebar.",
+            "Search for or pick a team member.",
+            "Review their tasks and open any one for detail, or select Send reminder to chase it.",
+            "Select Team live status at the top to see who is working right now."
+        ]
+    },
+    {
+        "id": "date-picker",
+        "category": "Getting started",
+        "title": "Date and time pickers",
+        "summary": "Every date and date-time field uses one picker, shown as dd-Mon-yyyy (with hh:mm where a time is needed).",
+        "roles": "All members",
+        "url": "../dashboard",
+        "steps": [
+            "Click a date field to open the calendar, or type the date directly.",
+            "Press Enter or click away to confirm what you typed; filters only apply once the field is confirmed.",
+            "Date-time fields show a time selector next to the calendar."
+        ]
+    },
+    {
+        "id": "help-center",
+        "category": "Getting started",
+        "title": "Help center",
+        "summary": "Search the feature guide, read recent changes and the accessibility statement. A page's ? link opens its own entry.",
+        "roles": "All members",
+        "url": "../help",
+        "steps": [
+            "Open Help center from the sidebar, or select ? on a page.",
+            "Search by keyword or choose a category.",
+            "Select How to use for the steps, or Open feature to go to the page."
+        ]
+    },
+    {
+        "id": "new-updates",
+        "category": "Getting started",
+        "title": "New updates",
+        "summary": "See what has changed in the product, newest first.",
+        "roles": "Site Admin, Admin, Manager, Team Lead",
+        "url": "../new-updates",
+        "steps": [
+            "Open New updates from the sidebar.",
+            "Read the updates under each date. The newest is marked Latest."
+        ]
+    },
+    {
+        "id": "sign-in",
+        "category": "Getting started",
+        "title": "Signing in and resetting your password",
+        "summary": "Sign in with your organisation's login method (Microsoft, Google or username and password, depending on what your admin enabled).",
+        "roles": "Everyone",
+        "url": "../login",
+        "steps": [
+            "Open the sign-in page and choose a login method.",
+            "If you use a password and forgot it, select Forgot password and follow the emailed link.",
+            "Choose a new password on the reset page; you can change it later under My Profile."
+        ]
+    },
+    {
+        "id": "task-list",
+        "category": "Tasks",
+        "title": "Tasks",
+        "summary": "Search, filter, and open tasks visible in your access scope.",
+        "roles": "All members",
+        "url": "../tasks",
+        "steps": [
+            "Open All Tasks under Tasks.",
+            "Filter by project, assignee, status, priority, task type, environment, or overdue state.",
+            "To keep a filter combination, select More filters, then Save this view, type a name and select Save. Choose it later from Saved views; select Delete view to remove it. Views are kept in this browser only.",
+            "Select View to open task details."
+        ]
+    },
+    {
+        "id": "create-task",
+        "category": "Tasks",
+        "title": "Create a task",
+        "summary": "Create scoped work with an assignee, dates, estimates, and documentation.",
+        "roles": "All members",
+        "url": "../tasks/create",
+        "steps": [
+            "Select Add task on All Tasks or My Tasks.",
+            "Choose the project, the task lifecycle and an allowed assignee. If the project is not listed and you can create projects, select Create a project under the Project list.",
+            "Complete the task details and save. To create many at once, use Bulk upload tasks."
+        ]
+    },
+    {
+        "id": "task-details",
+        "category": "Tasks",
+        "title": "Task details and sub-items",
+        "summary": "Manage task information, comments, issues, improvements, and action items.",
+        "roles": "Scoped members",
+        "url": "../tasks",
+        "steps": [
+            "Open a task.",
+            "Review details and use the Sub-tasks, Feedback (issues and improvements), Comments and Attachments tabs; add a sub-task with Assign to to create a real task for someone; the Details panel holds dates, assignee and estimates.",
+            "Work through the task checklist, and click an attachment to preview images, video, audio or PDFs in place.",
+            "Add or update items as work progresses."
+        ]
+    },
+    {
+        "id": "task-timers",
+        "category": "Tasks",
+        "title": "Task timers",
+        "summary": "Start, pause, and resume time tracking for primary assignments.",
+        "roles": "Assigned to",
+        "url": "../dashboard",
+        "steps": [
+            "Find your assigned task.",
+            "Select Start or Start Review.",
+            "Starting or resuming a task pauses any other running task timer."
+        ]
+    },
+    {
+        "id": "away-time",
+        "category": "Tasks",
+        "title": "Away time prompt",
+        "summary": "If the computer sleeps, hibernates or is shut down for 10 minutes or more while a task timer is running, you are asked what that time was when you are back.",
+        "roles": "Assigned to",
+        "url": "../dashboard",
+        "steps": [
+            "Come back to HYCROS — Hybrid Cross-functional Organization Suite with a task timer still running.",
+            "Read \"You were away\" to see how long and between which times.",
+            "Select Add as break to record a break for that time and take it off the task, Keep as work to leave the task time as it is, or Discard to take it off the task without recording a break.",
+            "The task timer keeps running after the away time."
+        ]
+    },
+    {
+        "id": "task-workflow",
+        "category": "Tasks",
+        "title": "Task workflow",
+        "summary": "Move work through development, testing, completion, acknowledgement, and release.",
+        "roles": "Role and assignment dependent",
+        "url": "../tasks",
+        "steps": [
+            "Open the task or use My Tasks actions.",
+            "Choose the available next action.",
+            "Resolve required checklist items and open issues, improvements and unfinished sub-tasks before completion."
+        ]
+    },
+    {
+        "id": "task-reminders",
+        "category": "Tasks",
+        "title": "Send a task reminder",
+        "summary": "Remind a task's main assignee to complete it, with an optional note. They get a notification and an email if they have email on.",
+        "roles": "Site Admin, Admin, CEO, Manager, Team Lead",
+        "url": "../tasks",
+        "steps": [
+            "Find an open task that is assigned to someone else: on Tasks (under More), Team dashboard, My Tasks (under More) or a project's Tasks tab, or open the task and use the Details panel on the right.",
+            "Select Send reminder.",
+            "Add a note if you want to, then select Send reminder.",
+            "You can send one reminder per task each hour. Each one appears in the task's activity."
+        ]
+    },
+    {
+        "id": "send-reminders",
+        "category": "Tasks",
+        "title": "Send reminders to your team",
+        "summary": "Remind several people at once to close overdue tasks, fill in a timesheet, submit a weekly update or check their leave and attendance. People with overdue tasks are suggested. They get a notification and an email if they have email on.",
+        "roles": "Site Admin, Admin, CEO, Manager, Team Lead",
+        "url": "../reminders",
+        "steps": [
+            "Open Send reminders in the sidebar.",
+            "Choose a Reminder, or pick Write my own message and type one.",
+            "Tick the people to remind. Anyone marked Suggested has overdue tasks and is ticked for you.",
+            "Hover over (or tab to) a red overdue badge to see which tasks are late, with their project and due date.",
+            "Select Send reminder.",
+            "You can remind each person once an hour. Someone reminded recently shows when you can try again."
+        ]
+    },
+    {
+        "id": "progress-reviews",
+        "category": "Tasks",
+        "title": "Progress reviews",
+        "summary": "Review configured milestones at 25%, 50%, 75%, and 95%.",
+        "roles": "Designated reviewers",
+        "url": "../dashboard",
+        "steps": [
+            "Open the assigned review from My Tasks.",
+            "Start the milestone review.",
+            "End the review after checking progress."
+        ]
+    },
+    {
+        "id": "unassigned-tasks",
+        "category": "Tasks",
+        "title": "Unassigned tasks",
+        "summary": "Find and assign tasks that do not yet have an owner.",
+        "roles": "Scoped members",
+        "url": "../tasks/unassigned",
+        "steps": [
+            "Open Unassigned tasks under Tasks.",
+            "Review the task and project.",
+            "Assign it or use another permitted workflow action."
+        ]
+    },
+    {
+        "id": "completed-tasks",
+        "category": "Tasks",
+        "title": "Completed and postponed tasks",
+        "summary": "Review completed, released, postponed, or cancelled work. Bulk release is available on Completed tasks.",
+        "roles": "Scoped members",
+        "url": "../tasks/completed",
+        "steps": [
+            "Open Completed tasks or Postponed tasks under Tasks.",
+            "Filter and open the required task.",
+            "Release, reopen, or resume when permitted."
+        ]
+    },
+    {
+        "id": "follow-up-on-complete",
+        "category": "Tasks",
+        "title": "Follow-up tasks on complete",
+        "summary": "When a project enables it, choose to create a follow-up task right after completing work.",
+        "roles": "Assigned to and permitted completers",
+        "url": "../projects/list",
+        "steps": [
+            "Enable Follow-up task on complete in project settings.",
+            "Complete a task and enter the required completion comment.",
+            "Confirm when asked to add a follow-up, then finish the prefilled create form."
+        ]
+    },
+    {
+        "id": "bulk-upload-tasks",
+        "category": "Tasks",
+        "title": "Bulk upload tasks",
+        "summary": "Create many tasks at once from an Excel or CSV file, or by pasting CSV. Each row becomes a new task; existing tasks are not updated.",
+        "roles": "Site Admin, Admin, Manager, Team Lead",
+        "url": "../tasks/bulk",
+        "steps": [
+            "Open Bulk upload tasks and pick the project.",
+            "Select Download CSV template and fill in one row per task.",
+            "Upload the file or paste the CSV, then submit and review the result."
+        ]
+    },
+    {
+        "id": "task-lifecycles",
+        "category": "Tasks",
+        "title": "Task lifecycles",
+        "summary": "A lifecycle sets the stages a task moves through. Standard is always available; Internal, HR Implementation and Payroll Implementation add stage-based flows, and the organisation chooses which lifecycles are offered.",
+        "roles": "All members (setup by Admin)",
+        "url": "../tasks/create",
+        "steps": [
+            "Pick the lifecycle when creating a task or configuring a project.",
+            "On the task, move it through its stages from the available actions.",
+            "Admins switch lifecycles on or off under Settings → Organisation → Task lifecycles. Existing tasks keep a lifecycle that is later switched off."
+        ]
+    },
+    {
+        "id": "scheduled-tasks",
+        "category": "Tasks",
+        "title": "Scheduled tasks",
+        "summary": "Recurring duties rostered to members with a time slot; they follow the organisation's working days. Members log work and actions against each occurrence.",
+        "roles": "Site Admin, Admin, CEO, Manager, Team Lead in departments with access",
+        "url": "../scheduled-tasks/definitions",
+        "steps": [
+            "Open Manage scheduled tasks under Tasks.",
+            "Create a duty, choose its category, time slot and the members on the roster.",
+            "Review Scheduled task work logs and the Scheduled task action report under Reports.",
+            "Department access is set in Settings → Scheduled task visibility."
+        ]
+    },
+    {
+        "id": "bug-tracker",
+        "category": "Tasks",
+        "title": "Bug tracker",
+        "summary": "Errors reported by connected applications are grouped into bugs and linked to tasks. Bug tasks auto-created from them are listed separately.",
+        "roles": "Admins, and members of departments with access",
+        "url": "../bugtracker/bugs",
+        "steps": [
+            "Open the Bug tracker under Tasks to see bugs, filtered by status or when they were first seen.",
+            "Open a bug (BUG-n) to review occurrences and its linked task.",
+            "Open Bug tasks to work the tasks created from bugs.",
+            "Admins add applications and API keys under Settings → API integration."
+        ]
+    },
+    {
+        "id": "due-date-requests",
+        "category": "Approvals",
+        "title": "Due Date Change Requests",
+        "summary": "Approve or reject requested task due-date changes, and open the task report or Change reasons report.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../tasks/due-date-requests",
+        "steps": [
+            "Open Due Date Change Requests.",
+            "Review the current and requested dates and reason.",
+            "Open Report for task history, or Change reasons for past requests.",
+            "Approve or reject the request."
+        ]
+    },
+    {
+        "id": "estimate-hours-requests",
+        "category": "Approvals",
+        "title": "Estimate Hours Change Requests",
+        "summary": "Approve or reject requested task estimate-hours changes.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../tasks/estimate-hours-requests",
+        "steps": [
+            "Open Estimate Hours Change Requests.",
+            "Review the current and requested hours and reason.",
+            "Approve or reject the request."
+        ]
+    },
+    {
+        "id": "documentation-verification",
+        "category": "Approvals",
+        "title": "Documentation verification",
+        "summary": "Review required task documentation before workflow completion.",
+        "roles": "Configured verifiers and Admin",
+        "url": "../tasks/documentation-verifications",
+        "steps": [
+            "Open Doc verifications.",
+            "Review the task documentation.",
+            "Add a comment and approve or reject."
+        ]
+    },
+    {
+        "id": "completion-acknowledgements",
+        "category": "Approvals",
+        "title": "Completion acknowledgements",
+        "summary": "Acknowledge a task as completed, acknowledge it as incomplete with a note, or send it back with feedback.",
+        "roles": "Assigned reviewers",
+        "url": "../tasks/completion-acks",
+        "steps": [
+            "Open Acknowledgements.",
+            "Review the task and completion note.",
+            "Select Completed and acknowledge when the work is done.",
+            "Select Incomplete, acknowledge to accept it but record what is still incomplete (a note is required). The task still becomes Completed.",
+            "Select Send back to return it without acknowledging."
+        ]
+    },
+    {
+        "id": "todo-approvals",
+        "category": "Approvals",
+        "title": "Assignment approvals",
+        "summary": "Approve submitted assignment evidence or return it with a note.",
+        "roles": "Assigned approvers",
+        "url": "../checklists/approvals",
+        "steps": [
+            "Open Assignment approvals.",
+            "Review the submitted evidence.",
+            "Approve or reject with a note."
+        ]
+    },
+    {
+        "id": "approval-reminders",
+        "category": "Approvals",
+        "title": "Pending approval reminders",
+        "summary": "Managers with approvals waiting get a bell notification and an e-mail every 2 hours, Monday to Friday between 9:00 and 19:59. It counts leave and work from home requests you approve, held tasks and timesheet edits of your team, and Assignment approvals. Nothing is sent when nothing is waiting.",
+        "roles": "Manager",
+        "url": "../leave/approvals",
+        "steps": [
+            "Select the notification, or the link in the e-mail, to open the approvals.",
+            "Approve or reject each request.",
+            "To stop the bell or e-mail, open My profile and change Pending approval reminders in Notification preferences."
+        ]
+    },
+    {
+        "id": "leave-approvals",
+        "category": "Approvals",
+        "title": "Leave and WFH approvals",
+        "summary": "Review pending requests, and delete approved leave or WFH with a reason.",
+        "roles": "Managers, Team Leads, and Admin",
+        "url": "../leave/approvals",
+        "steps": [
+            "Open Leave & WFH.",
+            "Check the Balance left column on the Leave tab, or the WFH left column on the WFH tab, to see how much the employee has left before you decide.",
+            "Approve or reject pending requests.",
+            "On the WFH tab (approved section) or the Approved tab, delete approved WFH with a required reason. Approved leave can be deleted from the Approved tab or the leave details page. Balance, quota, and attendance are restored, and the employee is notified."
+        ]
+    },
+    {
+        "id": "scheduled-task-edit-requests",
+        "category": "Approvals",
+        "title": "Overdue task edit requests",
+        "summary": "Approve or reject requests to edit scheduled tasks after their time has passed.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../tasks/scheduled-task-edit-requests",
+        "steps": [
+            "Open Overdue task edit requests under Approvals.",
+            "Review the requested change and reason.",
+            "Approve or reject the request."
+        ]
+    },
+    {
+        "id": "task-timesheet-approvals",
+        "category": "Approvals",
+        "title": "Tasks and timesheet approvals",
+        "summary": "Decide on pending task and timesheet requests in one queue.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../tasks/approvals",
+        "steps": [
+            "Open Tasks & timesheets under Approvals.",
+            "Review each request and its details.",
+            "Approve or reject it."
+        ]
+    },
+    {
+        "id": "projects",
+        "category": "Projects",
+        "title": "Active projects",
+        "summary": "Browse active projects, progress, members, and timelines.",
+        "roles": "All members",
+        "url": "../projects/list",
+        "steps": [
+            "Open Active projects.",
+            "Search or filter by status, department, or due date (overdue, today, this week, and more).",
+            "Open a project to view its tasks and setup. Each project has its own number (for example Project #1001), shown under its name and in the page address.",
+            "Use the Departments, Members and Actively working tabs to see which departments and people are on the project and who is running a timer right now.",
+            "A Kanban or Scrum project also has a Board tab, and a Scrum project has Backlog and Sprints tabs. See Kanban and Scrum."
+        ]
+    },
+    {
+        "id": "boards-and-sprints",
+        "category": "Projects",
+        "title": "Kanban and Scrum",
+        "summary": "Work a project as a Kanban board or in Scrum sprints. Each project chooses its Work style when it is created: Default flow (task lists only), Kanban (a board) or Scrum (a backlog, sprints and a board for the active sprint). Default flow, Kanban and Scrum are switched on separately under Settings → Modules, so an organisation can use any of them, and the names can be changed there. Task lifecycles, statuses and checks are the same in every style, and a project left on Default flow works exactly as before.",
+        "roles": "Everyone who can open the project; Admin, Manager and Team Lead plan sprints and set limits",
+        "url": "../projects/list",
+        "steps": [
+            "An Admin turns on Kanban boards, Scrum sprints or both under Settings → Modules. Both are off until then. Default flow is on by default and can be turned off there too; projects that already use it keep working. Then, under Settings → Project options, the Admin switches on Kanban work style, Scrum work style or both for each department that should use them.",
+            "When you create or edit a project of a department that has Work style on, choose its Work style: Default flow, Kanban or Scrum. Only the styles that are on, and that one of the project's departments has switched on, are listed.",
+            "Open the project and select the Board tab. Columns are To do, In progress, In review, Review passed and Done. You only see cards for tasks you are allowed to open, and the column count says how many more you cannot open.",
+            "Drag a card to another column, or use its Move to list (the keyboard and phone way). The same rules as on the task apply: dropping a card from To do onto In progress starts your timer and only the assignee can do it; moves that hand a task on ask who gets it and start no timer; Complete asks for a completion comment. If a check blocks the move, the card stays and the reason is shown.",
+            "Managers and Team Leads can select WIP limits to set the most tasks a column should hold. Over the limit the column shows a warning; nothing is blocked.",
+            "Under the board, Flow shows how many tasks were finished each week, how many are in progress now, and the cycle time (from the work starting to the task finishing) and lead time (from the task being created) of finished tasks, with the median and the time 85 in 100 tasks stay within. Choose a period of 4, 8, 12 or 26 weeks.",
+            "In a Scrum project, open Sprints and select Plan sprint: give it a name, a goal and dates (at most four weeks). The dates cannot change once it starts.",
+            "Open Backlog, tick tasks, choose a sprint and select Add to sprint. Use the arrows to put the backlog in order. A subtask follows its parent into the sprint.",
+            "On Sprints, select Start sprint. One sprint can be active at a time. The Board tab then shows that sprint's tasks, and the sprint shows a burndown of the estimated hours left.",
+            "Select Close sprint. Choose for each unfinished task whether it goes to the next sprint or back to the backlog; nothing moves by itself. Closed sprints show hours committed and finished, with a velocity chart. Hours are the tasks' estimates; a task split into subtasks that have estimates counts through those subtasks, so the same work is not counted twice."
+        ]
+    },
+    {
+        "id": "project-calendar",
+        "category": "Projects",
+        "title": "Project calendar",
+        "summary": "See open projects on a month grid by start and deadline dates for your department (Admins can filter by department).",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../projects/calendar",
+        "steps": [
+            "Open Project calendar under Projects.",
+            "Move between months.",
+            "Admins may filter by department.",
+            "Click a day to open project details."
+        ]
+    },
+    {
+        "id": "create-project",
+        "category": "Projects",
+        "title": "Create and configure a project",
+        "summary": "Set project details, departments, members, and task workflow defaults.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../projects/create",
+        "steps": [
+            "On Projects, use Simple project for a name and department only (you become owner and member), or Add project for the full form.",
+            "On the full form, enter scope, dates, owner, departments, and members. Pick Groups to let everyone in a user group see the project.",
+            "Select a client from the list, configure task defaults, and save. Add new clients under Settings → Clients.",
+            "If Kanban boards or Scrum sprints is on and your department has Kanban work style or Scrum work style switched on under Settings → Project options, pick a Work style: Default flow (task lists only, as before), Kanban (adds a Board tab) or Scrum (adds Backlog, Sprints and Board tabs). Default flow is the default, and you can change it later on Edit."
+        ]
+    },
+    {
+        "id": "project-join",
+        "category": "Projects",
+        "title": "Project join requests",
+        "summary": "Request access to a project or review pending membership requests.",
+        "roles": "All members; reviewers are Team Lead+",
+        "url": "../projects/list",
+        "steps": [
+            "Request to join an eligible project.",
+            "A reviewer opens Project join requests.",
+            "The reviewer approves or rejects the request."
+        ]
+    },
+    {
+        "id": "closed-projects",
+        "category": "Projects",
+        "title": "Closed projects",
+        "summary": "Review archived projects and reopen them when needed.",
+        "roles": "Scoped members",
+        "url": "../projects/closed",
+        "steps": [
+            "Open the closed-project list from Projects.",
+            "Review the archived project.",
+            "Reopen it when permitted."
+        ]
+    },
+    {
+        "id": "postponed-projects",
+        "category": "Projects",
+        "title": "Postponed projects",
+        "summary": "Review projects that are on hold and resume them when permitted.",
+        "roles": "Scoped members",
+        "url": "../projects/paused",
+        "steps": [
+            "Open Postponed projects under Projects.",
+            "Search or filter the list.",
+            "Open a project, or resume it when permitted."
+        ]
+    },
+    {
+        "id": "timesheets",
+        "category": "Time and meetings",
+        "title": "Timesheets",
+        "summary": "Review tracked task and meeting time.",
+        "roles": "All members",
+        "url": "../timesheets/list",
+        "steps": [
+            "Open Timesheets.",
+            "Filter by member, project, or date.",
+            "Open an allowed row to review or edit it.",
+            "Select Export CSV, Export PDF or Export Excel to download the filtered entries."
+        ]
+    },
+    {
+        "id": "manual-timesheet",
+        "category": "Time and meetings",
+        "title": "Add or edit a timesheet",
+        "summary": "Record or correct task and meeting time manually.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../timesheets/create",
+        "steps": [
+            "Select Add timesheet.",
+            "Choose an in-scope member and task.",
+            "Enter start/end times and notes, then save."
+        ]
+    },
+    {
+        "id": "meetings",
+        "category": "Time and meetings",
+        "title": "Meeting timers and minutes",
+        "summary": "Start meetings, pause task timers, record decisions, and create tasks from action items when you stop. Team meetings can only be stopped by the starter or a same-team Manager/Team Lead, and stop for everyone in that session.",
+        "roles": "All members",
+        "url": "../dashboard",
+        "steps": [
+            "Select Start meeting or Team meeting from My Tasks.",
+            "Record minutes and add action items with a task name and project.",
+            "Select Stop meeting (starter or same-team Manager/Team Lead for team meetings) to end the session and create those tasks."
+        ]
+    },
+    {
+        "id": "meeting-action-tasks",
+        "category": "Time and meetings",
+        "title": "Meeting action tasks",
+        "summary": "Turn meeting follow-ups into tracked tasks when the minutes owner stops the meeting.",
+        "roles": "All members",
+        "url": "../dashboard",
+        "steps": [
+            "While a meeting timer is running, open Action items / tasks.",
+            "Enter a task name and project (created unassigned at High priority).",
+            "Stop the meeting to create each task once and append links into the meeting minutes."
+        ]
+    },
+    {
+        "id": "team-meeting",
+        "category": "Time and meetings",
+        "title": "Start a team meeting",
+        "summary": "Start meeting timers for selected team members.",
+        "roles": "Authorized leaders",
+        "url": "../dashboard",
+        "steps": [
+            "Select Start team meeting.",
+            "Choose participating team members.",
+            "Confirm to pause their task timers and start the meeting."
+        ]
+    },
+    {
+        "id": "todo-lists",
+        "category": "Assignments",
+        "title": "Assignments",
+        "summary": "Complete personal or team assignments and provide evidence.",
+        "roles": "All members",
+        "url": "../checklists/list",
+        "steps": [
+            "Open Assignments.",
+            "Select an assigned list.",
+            "Complete items or submit required evidence."
+        ]
+    },
+    {
+        "id": "create-todo-list",
+        "category": "Assignments",
+        "title": "Create assignments",
+        "summary": "Assign a dated list to a member or department.",
+        "roles": "Team Lead, Manager, CEO, Admin",
+        "url": "../checklists/create",
+        "steps": [
+            "Select Create assignments.",
+            "Choose an assignee and approver.",
+            "Add dates and items, then save."
+        ]
+    },
+    {
+        "id": "edit-assignments",
+        "category": "Assignments",
+        "title": "Edit or delete assignments",
+        "summary": "Change an assignment list's title, assignee, approver, dates and items, or delete a list that has no submissions yet.",
+        "roles": "Team Lead, Manager, CEO, Admin",
+        "url": "../checklists/list",
+        "steps": [
+            "Open Assignments and select Edit beside a list.",
+            "Change the details or items, then select Update assignments.",
+            "To remove the list, select Delete assignments and confirm. Lists that already have submissions cannot be deleted."
+        ]
+    },
+    {
+        "id": "leave",
+        "category": "Leave and attendance",
+        "title": "Leave requests",
+        "summary": "Review balances and apply for available leave types.",
+        "roles": "All members",
+        "url": "../leave",
+        "steps": [
+            "Open My Leave.",
+            "Review balances and select Apply leave (or Mark menstrual leave when eligible).",
+            "Enter dates, reason, and supporting documents, then submit. Menstrual leave is applied immediately."
+        ]
+    },
+    {
+        "id": "wfh",
+        "category": "Leave and attendance",
+        "title": "Work from home",
+        "summary": "Submit work-from-home requests. Cancel pending requests, or revert approved WFH that has not been taken yet. Managers and Team Leads can delete a teammate's approved WFH once with a genuine reason.",
+        "roles": "All members",
+        "url": "../leave/wfh",
+        "steps": [
+            "Open Work from home.",
+            "Choose the date (today, a future day, or any day in the last 14 days) and enter a reason, then submit.",
+            "On Recent WFH requests, cancel a pending request or revert an approved day that is today or in the future.",
+            "Managers and Team Leads: on Team approved WFH, enter a genuine reason (at least 10 characters) and delete once. Quota and attendance are restored; the employee is notified."
+        ]
+    },
+    {
+        "id": "attendance",
+        "category": "Leave and attendance",
+        "title": "Attendance",
+        "summary": "Review check-in and check-out fetched from eTimeOffice (device or selfie punch). This app does not record punches.",
+        "roles": "All members",
+        "url": "../attendance",
+        "steps": [
+            "Punch in and out on the office device or selfie app.",
+            "Open My Attendance — recent punches sync automatically from eTimeOffice.",
+            "Use Import from eTimeOffice if you need an immediate refresh."
+        ]
+    },
+    {
+        "id": "team-calendar",
+        "category": "Leave and attendance",
+        "title": "Team calendar",
+        "summary": "See your team's approved leave, WFH, company holidays, and occupied work on one month grid. Switch between task and project views, then click a day for full details.",
+        "roles": "All members",
+        "url": "../calendar/team",
+        "steps": [
+            "Open Team calendar.",
+            "Choose Tasks or Projects view.",
+            "Move between months.",
+            "Click a day to see leave, WFH, holidays, and work details."
+        ]
+    },
+    {
+        "id": "team-attendance",
+        "category": "Leave and attendance",
+        "title": "Team attendance",
+        "summary": "Review attendance for your department and correct a teammate's record with a genuine reason.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../attendance/team",
+        "steps": [
+            "Open Team attendance.",
+            "Choose a date.",
+            "Review check-in, check-out, and attendance status.",
+            "Select Edit on a teammate (not yourself), change times or status, and enter a genuine reason (at least 10 characters).",
+            "Select Team leave balances to see how much leave and WFH each teammate has left."
+        ]
+    },
+    {
+        "id": "team-leave-balances",
+        "category": "Leave and attendance",
+        "title": "Team leave balances",
+        "summary": "See credited, used and left leave and WFH days for the people you manage.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../leave/team-balances",
+        "steps": [
+            "Open Team attendance and select Team leave balances.",
+            "Search by name, email or department, or change Leave year start and WFH quarter.",
+            "Read Credited, Used and Left for each leave type and for work from home.",
+            "Select Team attendance to go back."
+        ]
+    },
+    {
+        "id": "weekly-update",
+        "category": "People and knowledge",
+        "title": "Weekly update",
+        "summary": "Share priorities, progress, blockers, and support needs.",
+        "roles": "Active staff",
+        "url": "../weekly-updates",
+        "steps": [
+            "Open Weekly update.",
+            "Answer all four questions briefly.",
+            "Save and update answers during the current week.",
+            "If this week's update is still missing, you get a notification on Thursday and Friday."
+        ]
+    },
+    {
+        "id": "team-weekly-updates",
+        "category": "People and knowledge",
+        "title": "Team weekly updates",
+        "summary": "Review submitted and missing weekly updates.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../weekly-updates/team",
+        "steps": [
+            "Open Team weekly updates under Reports.",
+            "Filter by week, person, or completion status.",
+            "Select View to read a submission."
+        ]
+    },
+    {
+        "id": "swot",
+        "category": "People and knowledge",
+        "title": "Employee SWOT",
+        "summary": "Record strengths, weaknesses, opportunities, threats, and an improvement plan.",
+        "roles": "All members can edit their own; leaders can edit team SWOTs",
+        "url": "../swot",
+        "steps": [
+            "Open My SWOT to view your analysis.",
+            "Use Edit my SWOT to update your own items, or a leader opens Edit SWOT for a teammate.",
+            "Add items to each quadrant and Improvement plan, then save."
+        ]
+    },
+    {
+        "id": "feature-owners",
+        "category": "People and knowledge",
+        "title": "Feature owners",
+        "summary": "Find who owns each organizational capability.",
+        "roles": "All members",
+        "url": "../org-features",
+        "steps": [
+            "Open Feature owners.",
+            "Search by feature, category, department, or owner.",
+            "Use the listed contacts for questions or decisions."
+        ]
+    },
+    {
+        "id": "department-docs",
+        "category": "People and knowledge",
+        "title": "Department docs",
+        "summary": "Read process and reference documents available to your department.",
+        "roles": "Members with document access",
+        "url": "../department-docs",
+        "steps": [
+            "Open Department docs.",
+            "Choose a document.",
+            "Use its instructions for your team process."
+        ]
+    },
+    {
+        "id": "daily-report",
+        "category": "Reports",
+        "title": "Daily report",
+        "summary": "Review hours, meetings, and tasks touched by date.",
+        "roles": "All members (scoped)",
+        "url": "../reports/daily",
+        "steps": [
+            "Open Daily report.",
+            "Choose an end date.",
+            "Review totals or export as CSV.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "team-live",
+        "category": "Reports",
+        "title": "Team live status",
+        "summary": "See who is working, in a meeting, or idle.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/team-live",
+        "steps": [
+            "Open Team live status.",
+            "Filter the status list.",
+            "Refresh manually or enable automatic refresh."
+        ]
+    },
+    {
+        "id": "online-users",
+        "category": "Reports",
+        "title": "Online users",
+        "summary": "See who is using HYCROS — Hybrid Cross-functional Organization Suite right now and who was active in the last 30 minutes, or the last 100 people who opened it.",
+        "roles": "Admin",
+        "url": "../reports/online-users",
+        "steps": [
+            "Open Online users.",
+            "Use Show to switch between Last 100 accessed, Online, Recently active and Offline.",
+            "Turn on Auto-refresh (60s) to keep the list current."
+        ]
+    },
+    {
+        "id": "error-log",
+        "category": "Reports",
+        "title": "Error log",
+        "summary": "Look up a server error a member reports. The error page shows an Error code and a Reference; search for either here to see when it happened, who hit it and what failed.",
+        "roles": "Admin",
+        "url": "../reports/error-log",
+        "steps": [
+            "Ask the member for the Error code and Reference shown on the error page.",
+            "Open Error log and type the Reference or Error code in the search box.",
+            "Read the Message, and open the single match to see the full details."
+        ]
+    },
+    {
+        "id": "team-work",
+        "category": "Reports",
+        "title": "Team work overview",
+        "summary": "Charts for live status, hours by person, project, and task, plus assigned work and history.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/team-work",
+        "steps": [
+            "Open Team work overview.",
+            "Filter members and dates.",
+            "Review the charts, then live timers, assigned tasks, and history."
+        ]
+    },
+    {
+        "id": "user-report",
+        "category": "Reports",
+        "title": "Member report",
+        "summary": "Select one person and review hours by day, project, and task, plus averages and activity.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/user",
+        "steps": [
+            "Open Member report under Reports.",
+            "Choose a person in your department (or any staff, as an admin).",
+            "Set a date range and select View report.",
+            "Review averages, charts, hours by project and task, then timesheets and activity.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "reports-resigned",
+        "category": "Reports",
+        "title": "Resigned/exited employees in reports",
+        "summary": "Reports show current employees only. Tick Include resigned/exited on any report, including Report builder and Saved reports, to see only the people who have left, so their data never mixes with the current team's.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/report-dashboard",
+        "steps": [
+            "Open any report under Reports.",
+            "Tick Include resigned/exited in the filters (in Report builder it is above Preview; in a saved report it is above the table). The report now shows only resigned or exited employees. Scheduled e-mails always show current employees.",
+            "Untick it to go back to current employees."
+        ]
+    },
+    {
+        "id": "report-builder",
+        "category": "Reports",
+        "title": "Report builder",
+        "summary": "Build your own report from tasks, timesheets, projects, leave requests or attendance: choose columns or groupings, filters, a date range and a chart, then preview and save it. With Scrum sprints on, the Tasks report can also use a Sprint column. Rates, cost and budget fields are only for Site Admin, Admin and CEO.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/builder",
+        "steps": [
+            "Open Report builder under Reports.",
+            "Enter a Report name and choose what to report on under Report on.",
+            "Under Layout choose List every row and tick the Columns, or choose Summarise (group and total) and pick Group by, Calculations and a Chart.",
+            "Set a Date range and select Add a filter to narrow the rows.",
+            "Select Preview to see the report.",
+            "Under Who can open it choose Only me or Admins, Managers and Department Leads in my company, then select Save report."
+        ]
+    },
+    {
+        "id": "saved-reports",
+        "category": "Reports",
+        "title": "Saved reports",
+        "summary": "Open, download, schedule by e-mail, edit or delete the reports made in the report builder. Charts are in the PDF and in the e-mails. A shared report shows each person only the people they can already see.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/saved",
+        "steps": [
+            "Open Saved reports under Reports.",
+            "Select Run to open a report.",
+            "Select Download CSV, Download PDF or Download Excel to save a copy. The PDF includes the report's chart, and the Excel file has coloured headings, banded rows and a filter on the table. All files start with the company, report name, who downloaded it and when.",
+            "Watch the progress bar under the title: it shows the rows done, and you can select Cancel to stop. The file downloads by itself when it is ready; if it does not, select the Download link under the bar. If it fails, select Try again.",
+            "Select Schedule to e-mail a report you own: choose Send (every day, week or month), Dates covered, Attach and Send to, then select Save schedule.",
+            "Select Stop e-mailing in the same window to end a schedule.",
+            "Select Edit to change a report you own, or Delete to remove it."
+        ]
+    },
+    {
+        "id": "project-report",
+        "category": "Reports",
+        "title": "Project report",
+        "summary": "Charts for status and progress, with category, date range, and per-person project filters.",
+        "roles": "All members (scoped)",
+        "url": "../projects/report",
+        "steps": [
+            "Open Project report.",
+            "Filter by category, subcategory, date range, or other filters.",
+            "Click a person to see only their projects.",
+            "Review charts and the project table."
+        ]
+    },
+    {
+        "id": "task-report",
+        "category": "Reports",
+        "title": "Task report",
+        "summary": "Analyze task status, classification, assignees, and estimates.",
+        "roles": "All members (scoped)",
+        "url": "../tasks/report",
+        "steps": [
+            "Open Task report.",
+            "Apply task filters.",
+            "Review the report."
+        ]
+    },
+    {
+        "id": "estimate-report",
+        "category": "Reports",
+        "title": "Estimate vs actual",
+        "summary": "Compare development and testing estimates with tracked time.",
+        "roles": "Site Admin, Admin, Manager, Team Lead",
+        "url": "../reports/estimate-vs-actual",
+        "steps": [
+            "Open Estimate vs actual.",
+            "Select filters and dates.",
+            "Review variance between estimates and timer hours.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "due-estimate-change-reasons",
+        "category": "Reports",
+        "title": "Due date & estimate change reasons",
+        "summary": "Review requested due-date and estimate-hours changes with the reasons given.",
+        "roles": "Site Admin, Admin, Manager, Team Lead",
+        "url": "../reports/change-reasons",
+        "steps": [
+            "Open Change reasons under Reports.",
+            "Filter by type, status, project, requester, or date.",
+            "Review from/to values and the reason for each request."
+        ]
+    },
+    {
+        "id": "timesheet-report",
+        "category": "Reports",
+        "title": "Timesheet report",
+        "summary": "Review period totals, performance, and detailed time logs.",
+        "roles": "All members (scoped)",
+        "url": "../timesheets/report",
+        "steps": [
+            "Open Timesheet report.",
+            "Filter members, departments, projects, and dates.",
+            "Review totals or select Export CSV, Export PDF or Export Excel for the detailed entries."
+        ]
+    },
+    {
+        "id": "meeting-minutes-report",
+        "category": "Reports",
+        "title": "Meeting minutes report",
+        "summary": "Find meetings and recorded minutes.",
+        "roles": "All members (scoped)",
+        "url": "../reports/meeting-minutes",
+        "steps": [
+            "Open Meeting minutes.",
+            "Filter or search meetings.",
+            "Open the relevant minutes."
+        ]
+    },
+    {
+        "id": "release-notes",
+        "category": "Reports",
+        "title": "Release notes",
+        "summary": "Review task releases by site and date.",
+        "roles": "All members (scoped)",
+        "url": "../reports/release-notes",
+        "steps": [
+            "Open Release notes.",
+            "Filter by site or date.",
+            "Review recorded releases."
+        ]
+    },
+    {
+        "id": "activity-logs",
+        "category": "Reports",
+        "title": "Activity logs",
+        "summary": "Search full project or task history by name (including deleted), and browse audited actions.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/activity",
+        "steps": [
+            "Open Activity logs.",
+            "Type a project or task name to see who did what and when.",
+            "Optionally open All audit events to filter by entity, action, member, or text."
+        ]
+    },
+    {
+        "id": "timeline-replay",
+        "category": "Reports",
+        "title": "Timeline replay",
+        "summary": "Watch what was recorded for a project, task or member between two dates, like a camera replay. Choose All, or All projects, All tasks or All members, to replay everyone in your scope. Under the play buttons, summary tiles and one card per employee show the moment you are watching: working (with the project and task and how long), in a meeting, on a break or not working, with time on tasks so far. A Time occupied chart groups bars by project, filled up to that moment, and at the end of the replay it is the full summary. A timer left running over 12 hours is flagged so it can be checked. Only logged activity can be replayed.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/timeline-replay",
+        "steps": [
+            "Open Timeline replay.",
+            "Choose All, Project, Task or Member, then select one from the list (or All projects, All tasks or All members) or type to search.",
+            "Enter the From and To dates (up to 92 days).",
+            "Under the play buttons, read the summary tiles, each employee's card and the Time occupied chart for the moment shown.",
+            "Press Play. Use Pause, the position slider, Previous event, Next event, -1 day and +1 day to move around, and Speed to change how fast time runs."
+        ]
+    },
+    {
+        "id": "reports-dashboard",
+        "category": "Reports",
+        "title": "Report dashboard",
+        "summary": "A starting point for reporting, including Employee allocation: each person's open projects, the share of this month's working hours each one takes, and what is left.",
+        "roles": "All members (scoped)",
+        "url": "../reports/report-dashboard",
+        "steps": [
+            "Open Report dashboard under Reports.",
+            "Review the summary tables and charts for your access scope.",
+            "In Employee allocation, a share is the estimated hours of a person's open tasks over this month's working hours, so a person can go over 100%.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "team-insights",
+        "category": "Reports",
+        "title": "Team insights and portfolio",
+        "summary": "Spot risk early across people and projects: Team insights, Portfolio, Cycle time and Delivery predictability.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/insights",
+        "steps": [
+            "Open Team insights, Portfolio, Cycle time or Delivery predictability under Reports.",
+            "Apply the filters and date range.",
+            "Open a row to see the underlying tasks or projects.",
+            "On Portfolio, select a number in Open or Overdue (Projects) or in Open tasks, In progress or Overdue (Who is carrying what) to open the Tasks list for those tasks.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "capacity-quality",
+        "category": "Reports",
+        "title": "Capacity and quality",
+        "summary": "Capacity vs demand compares planned work with available hours; Rework & quality shows how often work is sent back.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/capacity",
+        "steps": [
+            "Open Capacity vs demand or Rework & quality under Reports.",
+            "Filter by department, member and dates.",
+            "Use the results to rebalance work.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "resource-allocation",
+        "category": "Reports",
+        "title": "Resource allocation",
+        "summary": "See which employee is allocated how much on which project, as a share of working hours, with a chart, availability and hints for moving work.",
+        "roles": "Team Lead, Manager, CEO, Admin",
+        "url": "../reports/resource-allocation",
+        "steps": [
+            "Open Resource allocation under Reports.",
+            "Choose a Month. Pick Minus approved leave under Capacity to take leave off each person's hours.",
+            "Filter by Project or Department.",
+            "Read Total allocated and Availability for each person, and the chart for who is on what.",
+            "Look for Over-allocated, unestimated tasks and the Suggestions about moving work to a teammate."
+        ]
+    },
+    {
+        "id": "task-governance",
+        "category": "Reports",
+        "title": "Task governance",
+        "summary": "Check that tasks follow the required documentation, checklist and approval rules.",
+        "roles": "Team Lead, Manager, Admin (Task governance module)",
+        "url": "../reports/governance",
+        "steps": [
+            "Open Task governance under Reports.",
+            "Filter by project, member or rule.",
+            "Open a task to resolve the gap.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "leave-attendance-report",
+        "category": "Reports",
+        "title": "Leave & attendance report",
+        "summary": "Summarise leave, work from home and attendance for your scope.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/leave-attendance",
+        "steps": [
+            "Open Leave & attendance under Reports.",
+            "Choose the period and members.",
+            "Review the totals and the detail rows."
+        ]
+    },
+    {
+        "id": "leaderboard",
+        "category": "Reports",
+        "title": "Points leaderboard",
+        "summary": "See task points earned by the team (Engagement module). Departments that use acknowledgement points also show Completion %.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/leaderboard",
+        "steps": [
+            "Open Points leaderboard under Reports.",
+            "Choose the period.",
+            "Review the rankings.",
+            "For departments using acknowledgement points, check the Completion % column and the Departments using acknowledgement points table.",
+            "Pick a Client to see only the projects, tasks and hours that belong to that client."
+        ]
+    },
+    {
+        "id": "point-settings",
+        "category": "Administration",
+        "title": "Point settings",
+        "summary": "Choose how each department earns task points.",
+        "roles": "Admin",
+        "url": "../settings/point-settings",
+        "steps": [
+            "Open Point settings under Settings.",
+            "Under Acknowledgement points, tick each department that should score by acknowledgement: Completed and acknowledge earns 1 point, Incomplete, acknowledge earns 0.",
+            "Select Save. Departments left unticked keep the effort-based points.",
+            "Open Points leaderboard under Reports to see the Completion % (points divided by total tasks)."
+        ]
+    },
+    {
+        "id": "team-swot-report",
+        "category": "Reports",
+        "title": "Team SWOT report",
+        "summary": "Review the SWOT analyses of the people you lead.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../reports/team-swot",
+        "steps": [
+            "Open Team SWOT under Reports.",
+            "Filter by person.",
+            "Open an entry to read or, for leaders, edit it."
+        ]
+    },
+    {
+        "id": "video-duration-report",
+        "category": "Reports",
+        "title": "Video duration report",
+        "summary": "Report video durations captured by the Video QA module.",
+        "roles": "Admin, and configured departments",
+        "url": "../reports/video-duration",
+        "steps": [
+            "Open Video duration under Reports.",
+            "Filter by date and member.",
+            "Admins configure departments under Settings → Video duration settings."
+        ]
+    },
+    {
+        "id": "billing-reports",
+        "category": "Reports",
+        "title": "Billing, billable tasks and profitability",
+        "summary": "Billing, Billable tasks and the Profitability forecast use the rates configured for the Billing module.",
+        "roles": "Admin",
+        "url": "../reports/billing",
+        "steps": [
+            "Open Billing, Billable tasks or Profitability forecast under Reports.",
+            "Filter by client, project and dates.",
+            "Set hourly rates and costs under Settings → Rates & costs."
+        ]
+    },
+    {
+        "id": "client-360",
+        "category": "Reports",
+        "title": "Client 360",
+        "summary": "One view of a client: projects, tasks, time and actions.",
+        "roles": "Admin (with client action reporting)",
+        "url": "../reports/client-360",
+        "steps": [
+            "Open Client 360 under Reports.",
+            "Choose a client.",
+            "Review the projects, hours and recent activity."
+        ]
+    },
+    {
+        "id": "client-actions",
+        "category": "Reports",
+        "title": "Client actions and quarterly performance",
+        "summary": "Client action report, Calls and emails targets and Quarterly performance for departments that use client actions.",
+        "roles": "Departments with the client action task subsection, and Admin",
+        "url": "../reports/client-actions",
+        "steps": [
+            "Open Client action report, Calls and emails or Quarterly performance under Reports.",
+            "Choose the period and members in your scope.",
+            "Review the actions against targets."
+        ]
+    },
+    {
+        "id": "revenue",
+        "category": "Reports",
+        "title": "Quarterly revenue and targets",
+        "summary": "Track quarterly revenue and compare it with targets.",
+        "roles": "Site Admin, Admin, Manager, Team Lead in departments with access",
+        "url": "../reports/revenue",
+        "steps": [
+            "Open Quarterly revenue or Quarterly revenue targets under Reports.",
+            "Pick the quarter.",
+            "Admins set which departments see revenue under Settings → Revenue visibility."
+        ]
+    },
+    {
+        "id": "lead-management",
+        "category": "Leads and clients",
+        "title": "Lead Management",
+        "summary": "Track enquiries from first contact to Won or Lost. Response time counts working hours only.",
+        "roles": "Admins, Managers in a department with lead access, and employees a Manager has given access to",
+        "url": "../leads",
+        "steps": [
+            "Open Leads under Lead Management in the sidebar.",
+            "Select New lead; only the client name is required.",
+            "Move the lead through Lead Received, Initial Contact, Requirement Gathering, Proposal Sent, Follow-up, Negotiation, then Won or Lost.",
+            "Filter the list by status. Admins choose which departments have access under Settings → Lead visibility (also reachable from Settings → Modules → Lead Management → Configure departments)."
+        ]
+    },
+    {
+        "id": "lead-access",
+        "category": "Leads and clients",
+        "title": "Lead access",
+        "summary": "Managers in a department with lead access choose which employees of their department can use Lead Management. Nobody gets it by default.",
+        "roles": "Site Admin, Admin and Managers in a department with lead access",
+        "url": "../settings/lead-access",
+        "steps": [
+            "Open Lead access under Lead Management in the sidebar.",
+            "Tick the people who should use Lead Management; search by name or email.",
+            "Select Save access. Untick someone and save to take it away.",
+            "Access stops if the department is removed from Settings → Lead visibility."
+        ]
+    },
+    {
+        "id": "clients",
+        "category": "Leads and clients",
+        "title": "Clients",
+        "summary": "Maintain client names and owners used by projects. Rename updates existing projects; delete clears the name from them.",
+        "roles": "Site Admin, Admin, Manager, Team Lead",
+        "url": "../settings/clients",
+        "steps": [
+            "Open Clients under Settings.",
+            "Add, rename or delete a client.",
+            "Open a client to see its details."
+        ]
+    },
+    {
+        "id": "client-access",
+        "category": "Leads and clients",
+        "title": "Client access",
+        "summary": "Share a read-only project status page with a client without giving them an account.",
+        "roles": "Site Admin, Admin, CEO, Manager",
+        "url": "../settings/client-access",
+        "steps": [
+            "Open Client access under Settings (Client portal module).",
+            "Create a share link for the project. A Manager sees and shares only the projects of their own department; Admins and the CEO see every project.",
+            "Send the link to the client; revoke it any time."
+        ]
+    },
+    {
+        "id": "client-share-page",
+        "category": "Leads and clients",
+        "title": "Client status page (what clients see)",
+        "summary": "Clients open a private link to see a read-only project status page, with no account.",
+        "roles": "Clients with a link",
+        "url": "../share",
+        "steps": [
+            "Receive the link from your account contact.",
+            "Open it to see the project status.",
+            "If the page says it is not available, the link has expired or been revoked; ask for a new one."
+        ]
+    },
+    {
+        "id": "users",
+        "category": "Administration",
+        "title": "Members and work overview",
+        "summary": "Manage staff accounts, bulk-import members, and inspect scoped work history.",
+        "roles": "Team Lead, Manager, Admin",
+        "url": "../users",
+        "steps": [
+            "Open Members under Admin.",
+            "Search or filter staff. A member with a missing gender, department, job title, manager, date of joining or date of birth shows an Incomplete badge listing what is missing; tick Incomplete profiles only to list just those members, then select Edit to fill them in. Use Add member for a new account, or Bulk members to import many.",
+            "Open a member to review details or use an allowed action.",
+            "To change a member's role (designation), select Edit and pick a new Role. Admins can choose any role. The CEO and people with the HR flag can move a Manager, Team Lead or Employee between those three roles, but cannot make anyone an Admin or CEO or change an Admin's or the CEO's role. They can also change a member's email, but only Admins can set a password.",
+            "To mark someone as resigned, open the member's actions and select Mark resigned. Their open tasks, projects they own, people who report to them and client ownerships go to their manager first, and each task gets a Reassigned entry in its log. If there is something to hand over and no active manager, set a manager first."
+        ]
+    },
+    {
+        "id": "team-lead-members",
+        "category": "Administration",
+        "title": "Team Lead members",
+        "summary": "Choose which people a Team Lead looks after on the Home page. A Team Lead with no one chosen sees their own department.",
+        "roles": "Manager, Admin",
+        "url": "../settings/team-lead-members",
+        "steps": [
+            "Open Home, then Project delivery, and select Choose members for a Team Lead.",
+            "Pick the Team Lead, then tick the people they look after. Use Search people to find someone.",
+            "Select Save members. To go back to the department, select Use own department instead and save."
+        ]
+    },
+    {
+        "id": "departments",
+        "category": "Administration",
+        "title": "Departments and job titles",
+        "summary": "Maintain department structure, titles, and member assignments.",
+        "roles": "Admin",
+        "url": "../settings/team-management",
+        "steps": [
+            "Open Departments under Settings.",
+            "Add or update departments, then open Department job titles for titles.",
+            "Use Member departments to assign staff, and Department task settings (including whether a task description is required) and Project options for per-department defaults."
+        ]
+    },
+    {
+        "id": "user-groups",
+        "category": "Administration",
+        "title": "User groups",
+        "summary": "Group people from any department, then assign a group to a project so its members can see it.",
+        "roles": "Site Admin, Admin, CEO, Manager, Team Lead, and members with the HR flag (a Manager or Team Lead changes only the groups they created)",
+        "url": "../settings/user-groups",
+        "steps": [
+            "Open User groups under Settings.",
+            "Enter a New group name and select Add group.",
+            "Select Edit members of the group, tick the people, and select Save members.",
+            "On Add project or a project's edit form, pick the group under Groups and save."
+        ]
+    },
+    {
+        "id": "task-lifecycles",
+        "category": "Administration",
+        "title": "Task lifecycles",
+        "summary": "Build your own task flow from work and review steps. All lifecycles are listed together, newest first; switch each one on or off for your organisation with its On switch. An Admin can change the steps of Internal, HR Implementation and Payroll Implementation for the organisation.",
+        "roles": "Site Admin and Admin (whole organisation or any department); Manager and Team Lead (their own department)",
+        "url": "../settings/lifecycles",
+        "steps": [
+            "Open Task lifecycles under Settings.",
+            "Select New lifecycle, enter the Lifecycle name and choose who it is Available to.",
+            "Name each step and choose Work or Review. Start with a work step, follow every work step with a review step, and end on a review step. A review step hands the task to a reviewer; choose where a rejected task goes back to under If rejected, go back to.",
+            "Select Create lifecycle. To change it later, select Edit; a step that still has tasks on it cannot be removed.",
+            "Pick the new lifecycle when you add a task or set a project's lifecycles.",
+            "Choose each step's Colour with the colour picker when you create or edit a lifecycle. Tasks on that step show it in that colour on My Tasks, the task list, Member tasks and the task page. Select Default to go back to the standard colour.",
+            "On each step, tick The person on this step can assign the next step to themselves so whoever works that step (for example In Progress) can also take the next step (for example review) instead of choosing someone else. For Standard, Issue and Improvement, an Admin selects Step options on the lifecycle and ticks the same box on its In Progress and In Review steps.",
+            "Admins: in the Task lifecycles list, select Edit steps on Internal, HR Implementation or Payroll Implementation to rename, add, reorder, recolour or remove its steps (a step with tasks on it cannot be removed), then select Save steps. Select Reset to go back to the default steps. Select Delete to remove one of these lifecycles for your organisation (not possible while tasks use it; deleted ones are listed under Deleted for your organisation, where Restore brings them back)."
+        ]
+    },
+    {
+        "id": "workflow-settings",
+        "category": "Administration",
+        "title": "Workflow settings",
+        "summary": "Configure feature ownership, release sites, documentation verifiers, task categories, checklist templates and sections.",
+        "roles": "Admin",
+        "url": "../settings/org-features",
+        "steps": [
+            "Open the relevant page under Settings (Feature ownership, Release sites, Documentation verifiers, Task categories, Checklist templates, Checklist sections).",
+            "Add or update the configuration.",
+            "In Checklist templates, set Applies at to At completion (Simple tasks) on the items a Simple task should tick before Complete; Simple tasks get only those items.",
+            "Save and verify it in the related workflow."
+        ]
+    },
+    {
+        "id": "integrations",
+        "category": "Administration",
+        "title": "Email, Teams, SSO, and eTimeOffice",
+        "summary": "Configure outbound mail, email-to-task support intake, Microsoft Teams, Git, login providers, and biometric attendance.",
+        "roles": "Admin",
+        "url": "../settings/mail",
+        "steps": [
+            "Open the relevant page under Settings (Email settings, Mail notifications, Email to tasks, Teams integration, Git integration, Microsoft, Google, Credential login, SCIM provisioning, MCP server, eTimeOffice).",
+            "Microsoft: under Profile check on the Microsoft page, set which Microsoft attribute feeds each member field (Name, Email, Department, Job title, Manager, Date of joining, Account active), then select Save Microsoft settings. Each Microsoft sign-in is compared with the member's record and differences are listed under Profile mismatches.",
+            "For support email intake, use Settings → Email to tasks (IMAP + round-robin pool). Polling runs automatically every 2 minutes once it is switched on; its schedule is under Scheduled jobs.",
+            "Enter the required configuration and use the test button where one is offered.",
+            "MCP server: turn on Allow MCP server login and select Save MCP server settings so people can sign in to the Claude connector with their email and password, even when Allow email and password login is off.",
+            "QR sign-in: under Settings → Credential login, turn Allow QR code sign-in on the mobile app on or off and select Save credential login. It is on by default. When it is on, people can show a QR code on their profile and scan it in the app to sign in. The login page only shows the sign-in methods your organisation has turned on.",
+            "For eTimeOffice, map each member's employee code on their profile, then enable sync.",
+            "Teams bot: under Assignment DMs (bot), turn on Enable Teams bot DMs and enter the Microsoft app ID, Microsoft app password (client secret) and Microsoft tenant ID, then select Save Teams settings. The password is saved encrypted and is not shown again; leave it blank to keep the saved one.",
+            "Teams bot for everyone: under Assignment DMs (bot), open How to roll the bot out to your whole organisation. Upload the app package in the Teams admin center (Teams apps > Manage apps), then add it under Setup policies > Global (Org-wide default) > Installed apps.",
+            "Teams: after setting up Teams integration, members get a Teams personal tab that lists their open tasks and lets them create and assign a task without leaving Teams. Follow Teams integration instructions on that page."
+        ]
+    },
+    {
+        "id": "claude-connector",
+        "category": "Administration",
+        "title": "Work on tasks from Claude",
+        "summary": "Once the MCP server is on, people can ask Claude about their tasks, projects, hours, scheduled tasks, dependencies and team, and (with changes allowed) update tasks, projects and time entries, without leaving Claude. Admins choose which groups of tools Claude may use. Tools are named like GetMyGCTasks, GetGCProject, GetGCCapacityReport and UpdateGCTask.",
+        "roles": "Admin",
+        "url": "../settings/mcp",
+        "steps": [
+            "Under Settings → MCP server, turn on Allow MCP server login and select Save MCP server settings.",
+            "To let Claude make changes as well as read, also turn on Allow write and select Save MCP server settings. It is off by default. People may need to reconnect the connector in Claude to see the change.",
+            "Under Tools Claude may use, switch off any group you do not want Claude to have (Tasks, Projects, Time tracking, Scheduled tasks, Dependencies, Reports, People, Leave and attendance) and select Save MCP server settings. A group that is off hides all of its tools, including the ones that change data.",
+            "Optionally enter your MCP server address in MCP server API URL and select Save MCP server settings. Select Copy connector URL to copy the address people paste into Claude.",
+            "Site Admins also see the server status under Settings → MCP server, with a Start MCP server or Restart MCP server button. You do not need it after changing a setting; use it only if the connector stops answering.",
+            "In Claude, add the HYCROS — Hybrid Cross-functional Organization Suite connector. The sign-in page looks like your organisation's login page and offers the same methods that are switched on (Microsoft, Google, single sign-on, and email and password). Claude only sees what you may see.",
+            "Ask Claude for your tasks (GetMyGCTasks), open one (GetGCTask) and ask what to do next (GetGCNextAction).",
+            "With changes allowed, ask Claude to add a comment (AddGCComment), a sub-task (AddGCSubTask), an improvement (AddGCImprovement) or an issue (AddGCIssue).",
+            "With changes allowed, ask Claude to change status (ChangeGCTaskStatus, SetGCItemStatus), move a staged task on (MoveGCTaskToNextStep), or start and pause the timer (StartGCTimer, PauseGCTimer).",
+            "Ask Claude about projects (ListGCProjects, GetGCProject, GetGCPortfolio), hours (ListGCTimesheets, GetGCTimesheetReport) and the team (GetGCCapacityReport, GetGCTeamWork, ListGCUsers, CheckGCAssigneeAvailability, GetGCEstimateVsActual). Managers and above get the reports; employees see their own work.",
+            "With changes allowed, ask Claude to change a task's name, description, assignee, priority, dates or estimates (UpdateGCTask), or to list tasks nobody owns (ListGCUnassignedTasks).",
+            "With changes allowed, ask Claude to create a project (CreateGCProject), change its name, dates, priority or status (UpdateGCProject), or close, reopen, postpone, cancel or resume it (SetGCProjectState). Managers and Team Leads only.",
+            "With changes allowed, ask Claude to add a time entry for work already done (LogGCTime) or edit your own entry (EditGCTimeEntry).",
+            "Ask Claude for scheduled tasks (ListGCScheduledTasks), including the overdue ones. To change one after its window, ask Claude to request an edit (RequestGCScheduledTaskEdit); managers can also list, create and switch off scheduled duties.",
+            "Ask Claude what a task waits for (GetGCTaskDependencies) or what is blocked in a project (GetGCProjectDependencies). With changes allowed, ask it to make a task wait for another (AddGCTaskDependency) or stop (RemoveGCTaskDependency).",
+            "In Claude, pick a ready-made request such as Weekly project status or Team capacity check from the prompt list."
+        ]
+    },
+    {
+        "id": "scim-provisioning",
+        "category": "Administration",
+        "title": "SCIM provisioning",
+        "summary": "Let Microsoft Entra ID (or another identity provider) add, update and deactivate people automatically.",
+        "roles": "Admin",
+        "url": "../settings/auth-scim",
+        "steps": [
+            "Open Settings → SCIM provisioning (under Sign-in).",
+            "Select Create token and copy it straight away: it is not shown again.",
+            "Turn on Allow SCIM provisioning and select Save SCIM settings.",
+            "In Microsoft Entra ID, open the enterprise application, choose Provisioning, set the mode to Automatic, then paste the Tenant URL from this page and the token as the Secret Token. Select Test connection, then turn provisioning on.",
+            "People the provider adds are created as Employees; set their role in Members. A person marked inactive in the provider is marked resigned here and signed out, and their open tasks, projects, reports and clients go to their manager (if they have none, these stay as they are). A Site Admin cannot be deactivated this way.",
+            "Select Replace token or Revoke token to stop the provider at once.",
+            "Under Profile mismatches, see people whose title, department, manager or name sent by the provider differs from their member record. Nothing is changed for you: open the member and select Edit to correct it."
+        ]
+    },
+    {
+        "id": "leave-admin",
+        "category": "Administration",
+        "title": "Leave HR hub",
+        "summary": "Maintain holidays, balances, quotas, and separation encashment.",
+        "roles": "Admin",
+        "url": "../leave/holidays",
+        "steps": [
+            "Open Leave HR hub under Leave & attendance.",
+            "Choose holidays, balances, quotas or encashment.",
+            "Make the required audited update."
+        ]
+    },
+    {
+        "id": "organisation-settings",
+        "category": "Administration",
+        "title": "Organisation settings",
+        "summary": "Company name and logo, default time zone, date and time format, theme, working days, task lifecycles, session timeout, task points split and attendance reminders.",
+        "roles": "Admin",
+        "url": "../settings/organization",
+        "steps": [
+            "Open Organisation under Settings.",
+            "Update the details; working days drive due dates, leads and allocation.",
+            "Under Date and time format, choose a Date format (dd-mmm-yyyy, dd/mm/yyyy, mm/dd/yyyy or yyyy-mm-dd) and a Time format (24-hour or 12-hour). It changes how everyone in the organisation sees dates and times, and how they type them in date fields. Saved dates are not changed.",
+            "Under Theme, choose Light (standard), High contrast or Soft for everyone's light mode. Under Accent colour, keep Theme default or pick Teal, Blue, Violet, Rose, Amber, Slate or Custom (any colour); it applies in every theme, including dark. Each person can still switch to dark mode with the theme button in the top bar.",
+            "Under Task points, set Developer share of task points (1 to 99, default 80): when a task has both development and review hours, that share of its points goes to the people who did the work and the rest to reviewers. It applies to tasks completed from now on.",
+            "Save."
+        ]
+    },
+    {
+        "id": "modules",
+        "category": "Administration",
+        "title": "Modules",
+        "summary": "Switch features on or off for everyone. A module that is off disappears from the menu and its pages stop opening.",
+        "roles": "Admin",
+        "url": "../settings/modules",
+        "steps": [
+            "Open Modules under Settings.",
+            "Turn a module on or off.",
+            "Default flow is on by default; Kanban boards and Scrum sprints are separate modules and both are off until you turn them on. Each has a Name shown to members field. While a style is off, its projects work as Default flow. After turning one on, switch on Kanban work style or Scrum work style for the departments that should use it under Settings → Project options.",
+            "Save; the menu updates for everyone."
+        ]
+    },
+    {
+        "id": "subscription",
+        "category": "Administration",
+        "title": "Subscription",
+        "summary": "See your plan, how many people used the system this month and your invoices, and open Stripe to update the payment method. Only on hosted accounts.",
+        "roles": "Site Admin",
+        "url": "../settings/subscription",
+        "steps": [
+            "Open Subscription under Settings.",
+            "Check your plan, the next renewal and the seats used this month.",
+            "Select Manage payment method to update your card in Stripe.",
+            "Use View next to an invoice to see or download it."
+        ]
+    },
+    {
+        "id": "contact-support",
+        "category": "Getting started",
+        "title": "Contact support",
+        "summary": "Ask the HYCROS — Hybrid Cross-functional Organization Suite team for help and follow the answer here and by e-mail. A Site Admin sees every ticket of the organisation and chooses who else can contact support; everyone else sees only their own tickets. Only on hosted accounts, and still open when a payment is overdue.",
+        "roles": "Site Admin, and members a Site Admin allows",
+        "url": "../support",
+        "steps": [
+            "Open Contact support in the Help section of the menu.",
+            "Under New ticket, enter a Subject, choose what it is about and how urgent it is, describe the problem and select Send ticket.",
+            "Open a ticket from the list to read the answers and write a reply. Waiting on you means support needs your answer.",
+            "Select Close ticket when you no longer need help. A closed ticket takes no replies; raise a new one to ask again.",
+            "Site Admin: under Who can contact support, tick the people who may raise tickets and select Save."
+        ]
+    },
+    {
+        "id": "data-export",
+        "category": "Administration",
+        "title": "Data export",
+        "summary": "Download your organisation's own data as a ZIP of CSV files (people, projects, tasks, comments, timesheets, leave, attendance, checklists and the audit log) before you close the account. Passwords and other secrets are never included, and uploaded files are not included. One export per hour.",
+        "roles": "Site Admin",
+        "url": "../settings/data-export",
+        "steps": [
+            "Open Data export under Settings.",
+            "Read what is in the ZIP and what is not (uploaded files are not included).",
+            "Select Download ZIP and wait for the download to finish.",
+            "Open manifest.csv to see the number of rows in each file.",
+            "If Download ZIP is greyed out, your organisation exported in the last hour: wait for the time shown."
+        ]
+    },
+    {
+        "id": "multi-task-allocation",
+        "category": "Administration",
+        "title": "Multi-task time allocation",
+        "summary": "Let selected departments or members run several task timers at once and plan capacity from check-in to 8 PM. Member override wins over department, then the default.",
+        "roles": "Admin",
+        "url": "../settings/multi-task-allocation",
+        "steps": [
+            "Open Multi-task allocation under Settings.",
+            "Choose the default, departments and individual members.",
+            "Save."
+        ]
+    },
+    {
+        "id": "scheduled-jobs",
+        "category": "Administration",
+        "title": "Scheduled jobs",
+        "summary": "Choose when each background job (digests, reminders, syncs, email polling) runs and in which time zone. Changes apply within a minute.",
+        "roles": "Admin",
+        "url": "../settings/jobs",
+        "steps": [
+            "Open Scheduled jobs under Settings.",
+            "Edit a job's schedule or time zone.",
+            "Save."
+        ]
+    },
+    {
+        "id": "about-health",
+        "category": "Administration",
+        "title": "About & health, starter content and members import",
+        "summary": "Check the version and install health, load starter departments and checklists, and bulk-import members.",
+        "roles": "Admin",
+        "url": "../settings/about",
+        "steps": [
+            "Open About & health under Settings and share it with support if something looks wrong.",
+            "Use Starter content to add departments, job titles and checklists to begin with.",
+            "Use Bulk members under Admin to import staff."
+        ]
+    },
+    {
+        "id": "task-category-settings",
+        "category": "Administration",
+        "title": "Task categories and visibility",
+        "summary": "Maintain task categories, the done values for task subsection actions, and which departments see Scheduled tasks and the Bug tracker tasks.",
+        "roles": "Admin (some pages Site Admin, Admin)",
+        "url": "../settings/task-categories",
+        "steps": [
+            "Open Task categories under Settings to add or reorder categories.",
+            "Use Task subsection action done values to set what counts as done for an action.",
+            "Use Scheduled task visibility and Bug tracker visibility to choose the departments that see them."
+        ]
+    },
+    {
+        "id": "interest-categories",
+        "category": "Administration",
+        "title": "Interest categories and requests",
+        "summary": "Maintain the interest catalog used by Find a buddy and approve members' requests for new interests.",
+        "roles": "Site Admin, Admin (Engagement module)",
+        "url": "../settings/hobby-categories",
+        "steps": [
+            "Open Interest categories under Settings to add or edit interests.",
+            "Open Interest requests to review what members asked for.",
+            "Approve or reject each request."
+        ]
+    },
+    {
+        "id": "wellness",
+        "category": "Wellness and fun",
+        "title": "Wellness reminders",
+        "summary": "Choose which breaks to enable, set water goals, and configure browser reminders.",
+        "roles": "All members",
+        "url": "../profile",
+        "steps": [
+            "Open My Profile and find wellness settings.",
+            "Enable wellness, then tick each break type next to its interval.",
+            "Set your schedule and reminder intervals.",
+            "Enable browser notifications if wanted."
+        ]
+    },
+    {
+        "id": "cherry-on-top",
+        "category": "Wellness and fun",
+        "title": "Cherry on top",
+        "summary": "Play daily puzzles and team drawing, trivia, or word games.",
+        "roles": "All members",
+        "url": "../dashboard/daily-delight",
+        "steps": [
+            "Open Cherry on top.",
+            "Choose a solo puzzle or team game.",
+            "Create or join a room when playing with others."
+        ]
+    },
+    {
+        "id": "find-a-buddy",
+        "category": "Wellness and fun",
+        "title": "Find a buddy",
+        "summary": "Select interests, discover people with shared hobbies, and request new catalog entries.",
+        "roles": "All members (catalog managed by Admin)",
+        "url": "../dashboard/buddy-interests",
+        "steps": [
+            "Open Find a buddy from Cherry on top.",
+            "Select existing interests and save.",
+            "Use Buddy matches or request a new interest for admin approval."
+        ]
+    },
+    {
+        "id": "desktop-app",
+        "category": "Getting started",
+        "title": "Get the apps",
+        "summary": "Download HYCROS — Hybrid Cross-functional Organization Suite for Windows or Android.",
+        "roles": "All members",
+        "url": "../desktop-app",
+        "steps": [
+            "Open Get the apps from the sidebar.",
+            "On Windows, choose Download for Windows and open the installer. If Windows shows \"Windows protected your PC\", choose More info, then Run anyway.",
+            "On Android, open this page on the phone, choose Download for Android and open the file. If asked, allow installs from your browser.",
+            "Open HYCROS — Hybrid Cross-functional Organization Suite and sign in."
+        ]
+    }
+]

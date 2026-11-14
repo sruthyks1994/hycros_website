@@ -1,0 +1,11 @@
+{
+  "siteUrl": "https://hycros.com",
+  "appUrl": "https://app.hycros.com",
+  "signupUrl": "https://signup.hycros.com/signup",
+  "contactEmail": "",
+  "prices": {
+    "starter": null,
+    "pro": null
+  },
+  "currency": "₹"
+}

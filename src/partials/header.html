@@ -1,0 +1,37 @@
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="HYCROS home"
+      ><svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="9" fill="var(--accent)" />
+        <path
+          d="M9 8v16M23 8v16M9 16h14"
+          stroke="var(--accent-ink)"
+          stroke-width="3.4"
+          stroke-linecap="round"
+          fill="none"
+        /></svg
+      >HYCROS</a
+    >
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="/features/">Features</a>
+      <a href="/#reports">Reports</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/security/">Security</a>
+      <a href="/contact/">Contact</a>
+      <a class="only-small" href="{{APP_URL}}">Sign in</a>
+    </nav>
+    <div class="right">
+      <a class="btn signin" href="{{APP_URL}}">Sign in</a>
+      <a class="btn primary" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+      <button
+        class="burger"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Menu"
+      >
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

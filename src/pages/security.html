@@ -1,0 +1,82 @@
+<!--{"title":"Security","description":"How HYCROS keeps each company's data separate, how people sign in, and how access is controlled.","path":"/security/"}-->
+<section class="pagehead">
+  <div class="wrap">
+    <span class="eyebrow">Security</span>
+    <h1>Your data stays in your workspace.</h1>
+    <p class="lede">
+      Every company has its own space. Who can see what inside it is decided by roles and settings
+      you control.
+    </p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="h2" style="max-width: 20ch">Companies are kept apart.</h2>
+    <p class="lede" style="margin-top: 12px">
+      Every query is limited to the signed-in company. A record that belongs to another company is
+      answered as "not found", the same as a record that does not exist. Automated checks run on
+      every change and fail if one company could read or change another's records.
+    </p>
+    <div class="iso">
+      <div class="co">
+        <h3>Your company <span class="pill ok">your workspace</span></h3>
+        <div class="r">task · Onboarding pack</div>
+        <div class="r">lead · Meridian Foods</div>
+        <div class="r">timesheet · 31.5 h</div>
+      </div>
+      <div class="wall"><span>404 not found</span></div>
+      <div class="co">
+        <h3>Another company <span class="pill">separate</span></h3>
+        <div class="r">task · not visible</div>
+        <div class="r">lead · not visible</div>
+        <div class="r">timesheet · not visible</div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top: 56px">
+      <div class="card">
+        <h3>Sign-in options</h3>
+        <p>
+          Password, Google or Microsoft sign-in, or your own single sign-on (SAML). Repeated failed
+          sign-ins are rate limited. Password rules and reset links are built in.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Provisioning from your directory</h3>
+        <p>
+          Accounts can be created and switched off automatically from your identity provider with
+          SCIM, so leavers lose access the day they leave.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Roles and access</h3>
+        <p>
+          Admins, managers, team leads and employees see what their role allows. Leads, clients and
+          billing are visible only to the people you give access to.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Your data after the trial</h3>
+        <p>
+          If a trial ends without a plan, the workspace is suspended and sign-in is blocked. Your
+          data is kept, so you can pick a plan and carry on.
+        </p>
+      </div>
+    </div>
+    <p class="muted small" style="margin-top: 28px">
+      Questions from your security team? <a href="/contact/">Contact us</a>. We are happy to talk it
+      through.
+    </p>
+  </div>
+</section>
+
+<section class="band" style="padding-top: 0">
+  <div class="wrap">
+    <div class="final">
+      <h2>See it for yourself.</h2>
+      <p>7 days free. No card.</p>
+      <a class="btn white lg" href="{{SIGNUP_URL}}" data-trial>Start free trial</a>
+    </div>
+  </div>
+</section>
