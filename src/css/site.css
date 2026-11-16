@@ -847,7 +847,12 @@ figure.shot img {
 }
 .fgroup h2 {
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
+}
+.fintro {
+  color: var(--muted);
+  margin: 0 0 14px;
+  max-width: 60ch;
 }
 .flist {
   display: grid;
@@ -983,8 +988,31 @@ details p {
 .prose li {
   color: var(--muted);
 }
-.prose ul {
+.prose ul,
+.prose ol {
   padding-left: 20px;
+}
+.prose p,
+.prose ul,
+.prose ol {
+  margin: 0 0 14px;
+}
+.prose h3 {
+  font-size: 18px;
+  margin: 22px 0 6px;
+}
+.prose li + li {
+  margin-top: 6px;
+}
+.prose b {
+  color: var(--text);
+}
+/* A legal detail still to be filled in (see "legal" in site.config.json). */
+mark.todo {
+  background: color-mix(in srgb, var(--warn) 28%, transparent);
+  color: var(--text);
+  border-radius: 4px;
+  padding: 0 4px;
 }
 
 .foot {

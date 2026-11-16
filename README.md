@@ -12,7 +12,7 @@ node build.mjs --serve    # build and serve on http://localhost:4300
 
 | Path                | What                                                                                          |
 | ------------------- | --------------------------------------------------------------------------------------------- |
-| `site.config.json`  | Domains, sign-up link, contact email, prices, `annualDiscountPercent` and `guaranteeDays`. A `null` price shows "Announced at launch" |
+| `site.config.json`  | Domains, sign-up link, contact email, prices, `annualDiscountPercent` and the `legal` details. A `null` price shows "Announced at launch" |
 | `src/pages/*.html`  | One file per page. The first line is a comment with `title`, `description`, `path`, `noindex` |
 | `src/partials/`     | Shared header and footer                                                                      |
 | `src/css`, `src/js` | Styles and the small script (menu, tour tabs, screenshot fallback)                            |
@@ -25,6 +25,11 @@ features page is built from `data/help-features.json`, a copy of the product's `
 ```bash
 cp <hycros checkout>/server/src/data/help-features.json data/help-features.json
 ```
+
+The website does not show the product's help text. Each feature's name and one-line description come from
+`data/feature-copy.json`, written in plain words for managers and non-technical buyers. After a refresh, the build lists
+any new feature that has no entry there yet, so add a line for it. Group headings, their intros and the features left
+off the page are set in `GROUPS` and `HIDE` in `build.mjs`.
 
 ## Screenshots
 
@@ -39,11 +44,15 @@ Capture them from a demo company, never from real customer data.
 
 `node build.mjs` prints a "Before launch" line for each setting that is still missing.
 
-- Set `contactEmail`, the real prices, `annualDiscountPercent` ("Save 20% with yearly billing") and `guaranteeDays`
-  ("30-day money-back guarantee") in `site.config.json`. Until then the site shows the wording without figures.
-- Replace the draft terms and privacy pages with approved text, then remove `"noindex": true` from both. The sign-up page stores the
-  version of the terms each person accepted (`TERMS_VERSION` in `platform-admin/src/signup/signup.ts` in the product repository);
-  bump it whenever the terms text changes.
+- Set `contactEmail`, the real prices, and `annualDiscountPercent`
+  ("Save 20% with yearly billing") in `site.config.json`. Until then the site shows the wording without figures.
+- Have the privacy policy (`/privacy/`) approved by your legal
+  adviser, and fill in the `legal` block in `site.config.json` (company name, address, Grievance Officer, hosting
+  provider and location, email provider, log retention). Missing details show as highlighted placeholders, and the
+  build counts them. The terms page is still an outline and needs writing.
+- Once approved, remove `"noindex": true` and the draft notice from the terms and privacy pages. The sign-up
+  page stores the version of the terms each person accepted (`TERMS_VERSION` in `platform-admin/src/signup/signup.ts`
+  in the product repository); bump it whenever the terms or privacy text changes.
 - Point `signupUrl` at the platform-admin sign-up page and `appUrl` at the product.
 - The platform-admin sign-up page needs `PLATFORM_SIGNUP_ENABLED=1` and a CSP that allows the captcha (see the plan, Phase 4).
 

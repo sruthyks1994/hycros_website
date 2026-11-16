@@ -40,19 +40,31 @@ const tokens = {
   CURRENCY: config.currency,
   PRICE_STARTER: price(config.prices.starter),
   PRICE_PRO: price(config.prices.pro),
-  PRICE_NOTE: "per user, per month",
+  PRICE_NOTE: "per person, per month",
   YEAR: String(new Date().getFullYear()),
   // "Save 20% with yearly billing" once annualDiscountPercent is set.
   ANNUAL_NOTE:
     typeof config.annualDiscountPercent === "number"
       ? `Save ${config.annualDiscountPercent}% with yearly billing`
       : "Save with yearly billing",
-  // "30-day money-back guarantee" once guaranteeDays is set.
-  GUARANTEE:
-    typeof config.guaranteeDays === "number"
-      ? `${config.guaranteeDays}-day money-back guarantee`
-      : "Money-back guarantee",
 };
+// Legal pages: an empty setting shows a highlighted placeholder, and the build lists what is left to fill in.
+const todo = (label) => `<mark class="todo">${label}</mark>`;
+// site.config.json "legal": [setting, token, placeholder shown while it is empty].
+const legal = config.legal ?? {};
+for (const [key, token, label] of [
+  ["legalName", "LEGAL_NAME", "company legal name"],
+  ["registeredAddress", "LEGAL_ADDRESS", "registered address"],
+  ["grievanceOfficer", "GRIEVANCE_OFFICER", "Grievance Officer's name"],
+  ["hostingProvider", "HOSTING_PROVIDER", "hosting provider"],
+  ["hostingLocation", "HOSTING_LOCATION", "country or region of the servers"],
+  ["emailProvider", "EMAIL_PROVIDER", "email delivery provider"],
+  ["logRetention", "LOG_RETENTION", "how long server logs are kept, e.g. 30 days"],
+])
+  tokens[token] = legal[key] ? escape(legal[key]) : todo(label);
+tokens.CONTACT_EMAIL_LINK = config.contactEmail
+  ? `<a href="mailto:${escape(config.contactEmail)}">${escape(config.contactEmail)}</a>`
+  : todo("contact email");
 
 // Settings that must be filled in before launch. The build still runs, but says what is missing.
 const warnings = [];
@@ -62,27 +74,27 @@ for (const plan of ["starter", "pro"])
     warnings.push(`prices.${plan} is not set: the pricing shows "Announced at launch".`);
 if (typeof config.annualDiscountPercent !== "number")
   warnings.push('annualDiscountPercent is not set: the site says "Save with yearly billing" without a figure.');
-if (typeof config.guaranteeDays !== "number")
-  warnings.push('guaranteeDays is not set: the site says "Money-back guarantee" without a period.');
 
 // The features page lists the product's own feature guide (data/help-features.json, a copy of the product's
 // server/src/data/help-features.json; refresh it with the steps in README.md), so it cannot drift from the product.
-// [category in the data, heading shown on the website]
+// The website wording (title and one line per feature) comes from data/feature-copy.json, written for managers and
+// non-technical readers rather than the product's step-by-step help text.
+// [category in the data, heading shown on the website, one-line intro], in the order a manager reads them.
 const GROUPS = [
-  ["Getting started", "Your workspace"],
-  ["Tasks", "Tasks"],
-  ["Approvals", "Approvals"],
-  ["Projects", "Projects"],
-  ["Time and meetings", "Time and meetings"],
-  ["Assignments", "Assignments"],
-  ["Leave and attendance", "Leave and attendance"],
-  ["Reports", "Reports"],
-  ["Leads and clients", "Leads and clients"],
-  ["People and knowledge", "People and knowledge"],
-  ["Wellness and fun", "Wellness and engagement"],
-  ["Administration", "Administration"],
+  ["Projects", "Plan and run projects", "See every project's progress in one place, and spot the late ones early."],
+  ["Tasks", "Hand out work and see it done", "Every piece of work has an owner, a deadline and a clear next step."],
+  ["Approvals", "Approvals and sign-off", "The decisions that need you, in one place, with the reasons attached."],
+  ["Reports", "Reports and insight", "Answers to the questions managers ask every week, without building a spreadsheet."],
+  ["Time and meetings", "Time and meetings", "Know where the hours go, without chasing timesheets at the end of the month."],
+  ["Leave and attendance", "Leave and attendance", "Who is in, who is off, and who has room for more work."],
+  ["People and knowledge", "People and growth", "Weekly updates, growth plans and the documents your teams rely on."],
+  ["Assignments", "Checklists", "Give people a checklist to work through, and approve the proof when it is done."],
+  ["Leads and clients", "Sales and clients", "Follow every enquiry to a decision, and keep clients informed."],
+  ["Getting started", "For every employee", "What each person sees when they sign in, so they always know what to do next."],
+  ["Wellness and fun", "Wellbeing and team spirit", "Small touches that keep people well and connected."],
+  ["Administration", "Setup and control", "Set HYCROS up once to match how your organisation works."],
 ];
-// Guide entries that are internal tools or how-to notes rather than features worth listing.
+// Guide entries that are internal tools, admin plumbing or how-to notes rather than features worth listing.
 const HIDE = new Set([
   "Error log",
   "Feature owners",
@@ -92,7 +104,18 @@ const HIDE = new Set([
   "Resigned/exited employees in reports",
   "Mascot gallery",
   "About & health, starter content and members import",
+  "Scheduled jobs",
+  "Task categories and visibility",
+  "Workflow settings",
+  "Interest categories and requests",
+  "Point settings",
+  "Meeting action tasks",
+  "Client status page (what clients see)",
+  "Edit or delete assignments",
+  "Team Lead members",
+  "New updates",
 ]);
+const COPY = JSON.parse(readFileSync(join(root, "data", "feature-copy.json"), "utf8"));
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 // One short line per feature: the summary's first sentence, cut at a colon or bracket when it runs long.
 function blurb(summary = "") {
@@ -109,15 +132,22 @@ function featureLists() {
   const list = Array.isArray(raw) ? raw : raw.features;
   // A title is listed once, under the first group it appears in (Task lifecycles is in Tasks and Administration).
   const seen = new Set();
-  const groups = GROUPS.map(([category, heading]) => {
+  const groups = GROUPS.map(([category, heading, intro]) => {
     const items = list.filter(
       (f) => f.category === category && !HIDE.has(f.title) && !seen.has(f.title) && seen.add(f.title),
     );
-    return { heading, id: slug(heading), items };
+    return { heading, intro, id: slug(heading), items };
   }).filter((g) => g.items.length > 0);
   const known = new Set(GROUPS.map(([c]) => c));
   const unknown = [...new Set(list.map((f) => f.category))].filter((c) => !known.has(c));
   if (unknown.length) warnings.push(`help-features.json has categories the features page skips: ${unknown.join(", ")}.`);
+  const listed = groups.flatMap((g) => g.items.map((f) => f.title));
+  const uncopied = listed.filter((t) => !Array.isArray(COPY[t]));
+  if (uncopied.length)
+    warnings.push(`data/feature-copy.json has no plain wording for: ${uncopied.join(", ")} (the product's help text is shown instead).`);
+  const stale = Object.keys(COPY).filter((t) => !t.startsWith("_") && !listed.includes(t));
+  if (stale.length) warnings.push(`data/feature-copy.json has entries for features that are not listed: ${stale.join(", ")}.`);
+  const words = (f) => (Array.isArray(COPY[f.title]) ? COPY[f.title] : [f.title, blurb(f.summary)]);
   const total = groups.reduce((n, g) => n + g.items.length, 0);
   const jump = `<nav class="chips jump" aria-label="Feature groups">${groups
     .map((g) => `<a class="chip" href="#${g.id}">${escape(g.heading)} <span>${g.items.length}</span></a>`)
@@ -125,8 +155,11 @@ function featureLists() {
   const body = groups
     .map(
       (g) =>
-        `<section class="fgroup" id="${g.id}" aria-labelledby="${g.id}-h"><h2 id="${g.id}-h">${escape(g.heading)}</h2><ul class="flist">${g.items
-          .map((f) => `<li><b>${escape(f.title)}</b><span>${escape(blurb(f.summary))}</span></li>`)
+        `<section class="fgroup" id="${g.id}" aria-labelledby="${g.id}-h"><h2 id="${g.id}-h">${escape(g.heading)}</h2><p class="fintro">${escape(g.intro)}</p><ul class="flist">${g.items
+          .map((f) => {
+            const [title, line] = words(f);
+            return `<li><b>${escape(title)}</b><span>${escape(line)}</span></li>`;
+          })
           .join("")}</ul></section>`,
     )
     .join("\n");
@@ -250,6 +283,8 @@ ${current(footer)}
     base ? filled.replace(/(href|src)="\/(?!\/)/g, `$1="${base}/`) : filled,
   );
   pages.push(meta);
+  const gaps = (filled.match(/<mark class="todo">/g) || []).length;
+  if (gaps) warnings.push(`${meta.path} has ${gaps} highlighted placeholder${gaps === 1 ? "" : "s"} to fill in.`);
 }
 
 const indexable = pages.filter((p) => !p.noindex);

@@ -9,5 +9,13 @@
   },
   "currency": "₹",
   "annualDiscountPercent": null,
-  "guaranteeDays": null
+  "legal": {
+    "legalName": "",
+    "registeredAddress": "",
+    "grievanceOfficer": "",
+    "hostingProvider": "",
+    "hostingLocation": "",
+    "emailProvider": "",
+    "logRetention": ""
+  }
 }
